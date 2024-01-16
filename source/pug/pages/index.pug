@@ -1,18 +1,27 @@
 extends ../components/base/layout
 
 block variables
-  - const title = "ProjectName" //- на страницах кроме главной используйте О нас — ProjectName
+  - const title = "MakeMeLook" //- на страницах кроме главной используйте О нас — ProjectName
   - const wrapperMods = ""
-  - const hasHeader = true
+  - const hasHeader = false
   - const headerMods = ""
-  - const hasFooter = true
+  - const hasFooter = false
   - const footerMods = ""
   - const currentUrl = "index.html" //- для остальных страниц пишем пустую строку или индекс активного headerLinks
 
 block main
-  main
+  main.wrapper
     //- на странице запрещен "голый" код
     //- все блоки вставляются из папки pug/components/blocks
-    +intro()
+    //- +intro()
+    section.wrapper__panel.blue
+      +intro()
+    section.wrapper__panel.red
+      +intro()
+    section.wrapper__panel.orange
+      +intro()
+    section.wrapper__panel.purple
+      +intro()
+
 
 block modals

@@ -32,7 +32,7 @@ html(lang="ru")
     link(rel="stylesheet", href="css/style.min.css")
 
   body
-    .wrapper(class=wrapperMods)
+    //-.wrapper(class=wrapperMods)
       if (hasHeader)
         +header(headerMods, currentUrl)
 
@@ -40,6 +40,8 @@ html(lang="ru")
 
       if (hasFooter)
         +footer(footerMods)
+
+    block main
 
     block modals
 

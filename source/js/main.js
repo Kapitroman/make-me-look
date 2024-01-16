@@ -4,6 +4,8 @@ import {Form} from './modules/form-validate/form';
 import {CustomSelect} from './modules/select/custom-select';
 import {uploadFile, uploadImageDrop} from './modules/input-file/init-upload';
 
+import {scrollSections} from './modules/scroll-sections';
+
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -27,6 +29,8 @@ window.addEventListener('DOMContentLoaded', () => {
     const form = new Form();
     window.form = form;
     form.init();
+
+    scrollSections();
   });
 });
 

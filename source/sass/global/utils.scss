@@ -1,10 +1,11 @@
+/*
 .wrapper {
   position: relative;
 
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  /* stylelint-disable-next-line */
+  // stylelint-disable-next-line
   min-height: calc(100 * var(--vh, 1vh));
 
   .header,
@@ -16,16 +17,19 @@
     flex-grow: 1;
   }
 }
+*/
 
+/*
 .rouble {
-  /* stylelint-disable */
+  // stylelint-disable
   font-weight: 400 !important;
-  /* stylelint-enable */
+  // stylelint-enable
   font-family: $ff-rouble;
-  /* stylelint-disable */
+  // stylelint-disable
   text-transform: lowercase !important;
-  /* stylelint-enable */
+  // stylelint-enable
 }
+*/
 
 .visually-hidden {
   position: absolute;
