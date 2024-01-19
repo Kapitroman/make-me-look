@@ -3,7 +3,7 @@ extends ../components/base/layout
 block variables
   - const title = "MakeMeLook" //- на страницах кроме главной используйте О нас — ProjectName
   - const wrapperMods = ""
-  - const hasHeader = false
+  - const hasHeader = true
   - const headerMods = ""
   - const hasFooter = false
   - const footerMods = ""
@@ -11,16 +11,20 @@ block variables
 
 block main
   main.wrapper
-    //- на странице запрещен "голый" код
-    //- все блоки вставляются из папки pug/components/blocks
-    //- +intro()
-    section.wrapper__panel.blue
-      +intro()
-    section.wrapper__panel.red
-      +intro()
-    section.wrapper__panel.orange
-      +intro()
-    section.wrapper__panel.purple
+    section#section-1.wrapper__panel.blue.hero
+      p.hero__subtitle Твой личный ИИ-стилист. Почувствуй себя звездой
+      h1.hero__title Создавай&nbsp;и&nbsp;примеряй идеальные&nbsp;образы за&nbsp;несколько&nbsp;секунд
+      //- +intro()
+      +img("content", "hero", "png", 1676, 806, "модели и предметы одежды")
+    section#section-2.wrapper__panel.red
+      p aaaaaaaaaa
+      //- +intro()
+      +img("content", "hero", "png", 1676, 806, "модели и предметы одежды")
+    section#section-3.wrapper__panel.orange
+      p aaaaaaaaaa
+      //- +intro()
+      +img("content", "hero", "png", 1676, 806, "модели и предметы одежды")
+    section#section-4.wrapper__panel.purple
       +intro()
 
 

@@ -44,6 +44,12 @@
   }
 }
 
+@mixin vp-1919-p {
+  @media (max-width: ($vp-1920 - 1px)) and (orientation: portrait) {
+    @content;
+  }
+}
+
 @mixin vp-1439 {
   @media (max-width: ($vp-1440 - 1px)) {
     @content;
@@ -68,8 +74,26 @@
   }
 }
 
+@mixin vp-767-p {
+  @media (max-width: ($vp-768 - 1px)) and (orientation: portrait) {
+    @content;
+  }
+}
+
 @mixin vp-374 {
   @media (max-width: ($vp-375 - 1px)) {
+    @content;
+  }
+}
+
+@mixin portrait {
+  @media (orientation: portrait) {
+    @content;
+  }
+}
+
+@mixin landscape {
+  @media (orientation: landscape) {
     @content;
   }
 }

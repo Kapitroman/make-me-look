@@ -1,0 +1,59 @@
+.hero {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding-top: size(116px);
+
+  @include vp-767-p {
+    height: 100vh;
+  }
+
+  &__title {
+    position: absolute;
+    top: size(219px);
+
+    margin: 0;
+    width: size(1250px);
+
+    text-align: center;
+    font-size: size(64px);
+    font-weight: 500;
+    line-height: 105%; /* 67.2px */
+    letter-spacing: size(1.28px);
+  }
+
+  &__subtitle {
+    margin: 0;
+    margin-top: size(63px);
+    margin-bottom: size(14px);
+
+    text-align: center;
+    font-size: size(22px);
+    line-height: normal;
+    letter-spacing: size(-0.22px);
+  }
+
+  img {
+    width: size(1676px);
+    height: size(806px);
+
+    //width: calc(1676 * var(--index-2));
+    //height: calc(806 * var(--index-2));
+
+    //width: resize-2(1676);
+    //height: resize-2(806);
+
+    object-fit: cover;
+    margin-top: auto;
+  }
+}
+
+.intro {
+  img {
+    width: size(120px);
+    height: size(120px);
+  }
+}

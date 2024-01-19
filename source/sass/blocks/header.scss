@@ -1,4 +1,5 @@
 .header {
+  /*
   padding: 28px 0;
 
   background-color: $color-neon-blue;
@@ -10,4 +11,14 @@
   &__logo {
     color: $color-default-white;
   }
+  */
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 30;
+
+  width: 100%;
+  height: size(116px);
+
+  background-color: $color-neon-blue;
 }
