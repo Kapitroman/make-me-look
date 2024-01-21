@@ -1,0 +1,61 @@
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+  @include vp-767 {
+    gap: 12px;
+  }
+
+  &__icon {
+    width: 56px;
+    height: 57px;
+
+    @include vp-767 {
+      width: 32px;
+      height: 32px;
+    }
+
+    rect {
+      color: $color-default-black;
+    }
+
+    path {
+      color: $color-default-white;
+    }
+  }
+
+  &__text {
+    width: 202px;
+    height: 25px;
+
+    @include vp-767 {
+      width: 103px;
+      height: 11px;
+    }
+
+    path {
+      color: $color-default-black;
+    }
+  }
+}
+
+.is-open {
+  .logo {
+    .logo__icon {
+      rect {
+        color: $color-default-white;
+      }
+
+      path {
+        color: $color-default-black;
+      }
+    }
+
+    .logo__text {
+      path {
+        color: $color-default-white;
+      }
+    }
+  }
+}

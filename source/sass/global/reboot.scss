@@ -169,3 +169,11 @@ button,
 [type="submit"] {
   appearance: none;
 }
+
+a[href] {
+  transition: opacity $trans-default;
+
+  @include hover-focus {
+    opacity: 0.7;
+  }
+}

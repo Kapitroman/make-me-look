@@ -501,6 +501,19 @@ button,
           appearance: none;
 }
 
+a[href] {
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+@media (hover: hover) {
+  a[href]:hover:not(.focus-visible) {
+    opacity: 0.7;
+  }
+}
+a[href].focus-visible:focus {
+  opacity: 0.7;
+}
+
 /*
 .wrapper {
   position: relative;
@@ -1611,6 +1624,60 @@ button,
   right: 0;
   bottom: -5px;
   color: #ff0000;
+}
+
+.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 15px;
+}
+@media (max-width: 767px) {
+  .logo {
+    gap: 12px;
+  }
+}
+.logo__icon {
+  width: 56px;
+  height: 57px;
+}
+@media (max-width: 767px) {
+  .logo__icon {
+    width: 32px;
+    height: 32px;
+  }
+}
+.logo__icon rect {
+  color: #000000;
+}
+.logo__icon path {
+  color: #ffffff;
+}
+.logo__text {
+  width: 202px;
+  height: 25px;
+}
+@media (max-width: 767px) {
+  .logo__text {
+    width: 103px;
+    height: 11px;
+  }
+}
+.logo__text path {
+  color: #000000;
+}
+
+.is-open .logo .logo__icon rect {
+  color: #ffffff;
+}
+.is-open .logo .logo__icon path {
+  color: #000000;
+}
+.is-open .logo .logo__text path {
+  color: #ffffff;
 }
 
 .panel {

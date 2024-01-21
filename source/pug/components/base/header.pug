@@ -15,7 +15,20 @@ mixin header(headerMods, currentUrl)
       },
     ]
 
-  header.header(class=headerMods)
+  header.header(class=headerMods, data-header="")
+    .container
+      +logo()
+      nav.header__nav
+        ul.header__list
+          each link in headerLinks
+            li.header__item
+              a.header__link(href=link.href)= link.text
+        //-+socials()
+      button.header__burger(type="button", data-burger, aria-label="Переключатель отображения меню", aria-pressed="false")
+        span
+        span
+
+  //-header.header(class=headerMods)
     //-.container
       if(currentUrl === "index.html")
         //- lighthouse снимает 10 баллов SEO за <a> без href
