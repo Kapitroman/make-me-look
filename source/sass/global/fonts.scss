@@ -11,8 +11,26 @@
 @font-face {
   font-style: normal;
   font-weight: 400;
-  font-family: "";
+  font-family: "GolosTextWebVF";
 
   font-display: swap;
-  src: url("../fonts/.woff2") format("woff2");
+  src: url("../fonts/golos-text_vf.woff2") format("woff2");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 400;
+  font-family: "GolosUIWebRegular";
+
+  font-display: swap;
+  src: url("../fonts/golos-ui_regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 500;
+  font-family: "GolosUIWebMedium";
+
+  font-display: swap;
+  src: url("../fonts/golos-ui_medium.woff2") format("woff2");
 }
