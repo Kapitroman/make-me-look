@@ -27,9 +27,13 @@ html {
   // https://transfonter.org/ - включите настройку https://prnt.sc/12rnt6g и переконвертируйте шрифт
 
   height: 100%; //
-  overflow-x: hidden; //
+  //overflow-x: hidden; //
 	margin: 0; //
-
+  /*
+  @include vp-767 {
+    overflow-x: initial;
+  }
+  */
   //--index-1: calc(100vw / 1920);
   //--index-2: calc(100vh / 1080);
   //--index-3: calc((100vw + 100vh) / 3000);
@@ -72,7 +76,7 @@ body {
   width: 100%;
   height: 100%;
 
-  background-color: $color-default-white;
+  background-color: $color-gray-1;
   height: unset; //
 }
 

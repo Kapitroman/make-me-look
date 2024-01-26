@@ -6,6 +6,7 @@ import {uploadFile, uploadImageDrop} from './modules/input-file/init-upload';
 
 //import {scrollSections} from './modules/scroll-sections';
 import {getMatchMedia} from './modules/get-match-media';
+import {Burger} from './modules/burger';
 
 // ---------------------------------
 
@@ -33,6 +34,9 @@ window.addEventListener('DOMContentLoaded', () => {
 
     //scrollSections();
     getMatchMedia();
+
+    const burger = new Burger();
+    burger.init();
   });
 });
 

@@ -1,15 +1,15 @@
 .logo {
   display: flex;
   align-items: center;
-  gap: 15px;
+  gap: size(15px);
 
   @include vp-767 {
     gap: 12px;
   }
 
   &__icon {
-    width: 56px;
-    height: 57px;
+    width: size(56px);
+    height: size(57px);
 
     @include vp-767 {
       width: 32px;
@@ -26,8 +26,8 @@
   }
 
   &__text {
-    width: 202px;
-    height: 25px;
+    width: size(202px);
+    height: size(25px);
 
     @include vp-767 {
       width: 103px;
