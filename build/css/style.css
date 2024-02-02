@@ -2005,7 +2005,6 @@ a[href].focus-visible:focus {
   font-weight: 500;
   line-height: 105%; /* 67.2px */
   letter-spacing: 0.08rem;
-  background-color: rgba(255, 0, 0, 0.3);
 }
 .hero__subtitle {
   margin: 0;
@@ -2017,9 +2016,9 @@ a[href].focus-visible:focus {
 }
 .hero__images {
   position: absolute;
+  bottom: 0;
   width: 100%;
   height: 50.375rem;
-  bottom: 0;
 }
 .hero__images > * {
   position: absolute;
