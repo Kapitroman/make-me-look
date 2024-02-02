@@ -14,8 +14,10 @@ body {
 html {
   font-style: normal;
   font-weight: 400;
-  font-size: $fz-default;
-  line-height: 24px;
+  //font-size: $fz-default;
+  //line-height: 24px;
+  font-size: size-desktop-vh($fz-default);
+  line-height: size(24px);
   font-family: $ff-g-text-regular;
   color: $color-default-black;
 
@@ -45,11 +47,12 @@ html {
   }
   */
 
+  /*
   @include vp-1919 {
     font-size: size-desktop-vh($fz-default);
     line-height: size(24px);
   }
-
+  */
   @include vp-1919-p {
     font-size: size-desktop-vw($fz-default);
     line-height: size(24px);
