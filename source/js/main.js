@@ -4,10 +4,11 @@ import {Form} from './modules/form-validate/form';
 import {CustomSelect} from './modules/select/custom-select';
 import {uploadFile, uploadImageDrop} from './modules/input-file/init-upload';
 
-//import {scrollSections} from './modules/scroll-sections';
-import {getMatchMedia} from './modules/get-match-media';
-import {Burger} from './modules/burger';
 
+//import {getMatchMedia} from './modules/get-match-media';
+import {Burger} from './modules/burger';
+//import {moveToSection} from './modules/move-to-section';
+import {scrollSections} from './modules/scroll-sections';
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -32,11 +33,14 @@ window.addEventListener('DOMContentLoaded', () => {
     window.form = form;
     form.init();
 
-    //scrollSections();
-    getMatchMedia();
+
+    //getMatchMedia();
 
     const burger = new Burger();
     burger.init();
+    //moveToSection();
+    //init();
+    scrollSections();
   });
 });
 

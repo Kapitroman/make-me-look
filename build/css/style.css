@@ -359,13 +359,13 @@ html,
 body {
   margin: 0;
   padding: 0;
-  min-height: 100vh;
+  min-height: 100dvh;
 }
 
 html {
   font-style: normal;
   font-weight: 400;
-  font-size: 1.4814814815vh;
+  font-size: 1.4814814815dvh;
   line-height: 1.5rem;
   font-family: "GolosTextWebVF", "Arial", sans-serif;
   color: #000000;
@@ -375,7 +375,7 @@ html {
   height: 100%;
   margin: 0;
   /*
-  @include vp-767 {
+  @include portrait {
     overflow-x: initial;
   }
   */
@@ -387,26 +387,26 @@ html {
   */
   /*
   @include vp-1919 {
-    font-size: size-desktop-vh($fz-default);
+    font-size: size-desktop-dvh($fz-default);
     line-height: size(24px);
   }
   */
   /*
-  @include vp-767-l {
-    font-size: size-desktop-vh($fz-default);
+  @include vp-1919-p {
+    font-size: size-desktop-vw($fz-default);
+    line-height: size(24px);
+  }
+  */
+  /*
+  @include portrait-l {
+    font-size: size-desktop-dvh($fz-default);
     line-height: size(24px);
   }
   */
 }
-@media (max-width: 1919px) and (orientation: portrait) {
+@media (orientation: portrait) {
   html {
-    font-size: 0.8333333333vw;
-    line-height: 1.5rem;
-  }
-}
-@media (max-width: 767px) {
-  html {
-    font-size: 0.8333333333vw;
+    font-size: 4.2666666667vw;
     line-height: 1.5rem;
   }
 }
@@ -610,9 +610,9 @@ a[href].focus-visible:focus {
   margin: 0 auto;
   padding: 0 5.21%;
 }
-@media (max-width: 767px) {
+@media (orientation: portrait) {
   .container {
-    padding: 0 24px;
+    padding: 0 1.5rem;
   }
 }
 
@@ -626,7 +626,7 @@ a[href].focus-visible:focus {
   padding: 1.875rem 0;
   background-color: #F2F2F2;
 }
-@media (max-width: 767px) {
+@media (orientation: portrait) {
   .header {
     min-height: 72px;
     padding: 20px 0;
@@ -651,12 +651,12 @@ a[href].focus-visible:focus {
       flex-shrink: 0;
   margin-right: 1.25rem;
 }
-@media (max-width: 767px) {
+@media (orientation: portrait) {
   .header .logo {
     margin-right: 20px;
   }
 }
-@media (max-width: 767px) {
+@media (orientation: portrait) {
   .header__nav {
     position: fixed;
     top: 72px;
@@ -712,7 +712,7 @@ a[href].focus-visible:focus {
   line-height: normal;
   letter-spacing: -0.15px;
 }
-@media (max-width: 767px) {
+@media (orientation: portrait) {
   .header__list {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -726,7 +726,7 @@ a[href].focus-visible:focus {
     line-height: 21px;
   }
 }
-@media (max-width: 767px) {
+@media (orientation: portrait) {
   .header__link {
     color: #ffffff;
   }
@@ -759,7 +759,7 @@ a[href].focus-visible:focus {
   transition: opacity 0.3s ease, transform 0.6s ease;
   transition: opacity 0.3s ease, transform 0.6s ease, -webkit-transform 0.6s ease;
 }
-@media (max-width: 767px) {
+@media (orientation: portrait) {
   .header__burger {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -784,7 +784,7 @@ a[href].focus-visible:focus {
   height: 3.5625rem;
   margin-left: 1.25rem;
 }
-@media (max-width: 767px) {
+@media (orientation: portrait) {
   .header__logo-apple {
     display: none;
   }
@@ -794,7 +794,7 @@ a[href].focus-visible:focus {
   width: 167px;
   height: 50px;
 }
-@media (max-width: 767px) {
+@media (orientation: portrait) {
   .header__app-store {
     display: block;
   }
@@ -809,7 +809,7 @@ a[href].focus-visible:focus {
       -ms-flex-align: center;
           align-items: center;
 }
-@media (max-width: 767px) {
+@media (orientation: portrait) {
   .header__socials {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -836,10 +836,19 @@ a[href].focus-visible:focus {
   list-style: none;
 }
 
-@media (max-width: 767px) {
+@media (orientation: portrait) {
   .header--shadow {
     -webkit-box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.1), 0 0 0 4px rgba(255, 255, 255, 0.7);
             box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.1), 0 0 0 4px rgba(255, 255, 255, 0.7);
+  }
+}
+
+@media (min-width: 768px) {
+  .header--last-section .header__nav {
+    display: none;
+  }
+  .header--last-section .header__apple {
+    display: none;
   }
 }
 
@@ -1847,7 +1856,7 @@ a[href].focus-visible:focus {
           align-items: center;
   gap: 0.9375rem;
 }
-@media (max-width: 767px) {
+@media (orientation: portrait) {
   .logo {
     gap: 12px;
   }
@@ -1856,7 +1865,7 @@ a[href].focus-visible:focus {
   width: 3.5rem;
   height: 3.5625rem;
 }
-@media (max-width: 767px) {
+@media (orientation: portrait) {
   .logo__icon {
     width: 32px;
     height: 32px;
@@ -1872,7 +1881,7 @@ a[href].focus-visible:focus {
   width: 12.625rem;
   height: 1.5625rem;
 }
-@media (max-width: 767px) {
+@media (orientation: portrait) {
   .logo__text {
     width: 103px;
     height: 11px;
@@ -1904,9 +1913,9 @@ a[href].focus-visible:focus {
   display: flex;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
-  --width: 600%;
+  --width: 700%;
   width: var(--width);
-  height: 100vh;
+  height: 100dvh;
 }
 @media (orientation: portrait) {
   .wrapper {
@@ -1924,9 +1933,9 @@ a[href].focus-visible:focus {
   min-width: 100vw !important;
   padding-top: 7.25rem;
 }
-@media (max-width: 767px) {
+@media (orientation: portrait) {
   .wrapper__panel {
-    padding-top: 77px;
+    padding-top: 0;
   }
 }
 .blue {
@@ -1946,9 +1955,9 @@ a[href].focus-visible:focus {
 .red {
   /*
   @include vp-1919 {
-    //--font-size: size-desktop-vh($fz-default);
+    //--font-size: size-desktop-dvh($fz-default);
     --font-size: 16px;
-    //font-size: size-desktop-vh($fz-default);
+    //font-size: size-desktop-dvh($fz-default);
     font-size: var(--font-size);
     line-height: size(24px);
   }
@@ -1960,9 +1969,9 @@ a[href].focus-visible:focus {
 
 .orange {
   /*
-  --font-size: size-desktop-vw-vh($fz-default);
+  --font-size: size-desktop-vw-dvh($fz-default);
   font-size: var(--font-size);
-  // font-size: size-desktop-vw-vh($fz-default);
+  // font-size: size-desktop-vw-dvh($fz-default);
   line-height: size(24px);
   */
   background-color: #e77614;
@@ -1978,6 +1987,33 @@ a[href].focus-visible:focus {
 
 .hero {
   position: relative;
+  height: 100%;
+  padding-top: 3.9375rem;
+  /*
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding-top: size(63px);
+  height: 100%;
+
+  @include portrait {
+    //height: calc(100dvh - 72px);
+    height: 100dvh;
+    padding-top: 72px;
+
+    padding-bottom: 30px;
+  }
+  */
+}
+@media (orientation: portrait) {
+  .hero {
+    height: 100dvh;
+    padding-top: 72px;
+    padding-bottom: 30px;
+  }
+}
+.hero .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1988,23 +2024,34 @@ a[href].focus-visible:focus {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 3.9375rem;
   height: 100%;
 }
-@media (max-width: 767px) and (orientation: portrait) {
-  .hero {
-    height: calc(100vh - 72px);
+@media (orientation: portrait) {
+  .hero .container {
+    position: relative;
+    z-index: 2;
+    height: calc(100dvh - 72px - 30px);
   }
 }
 .hero__title {
   margin: 0;
-  width: 65%;
+  width: 72%;
   font-family: "GolosUIWebMedium", "Arial", sans-serif;
   text-align: center;
   font-size: 4rem;
   font-weight: 500;
   line-height: 105%; /* 67.2px */
   letter-spacing: 0.08rem;
+}
+@media (orientation: portrait) {
+  .hero__title {
+    width: 100%;
+    margin-top: auto;
+    margin-bottom: 1.6875rem;
+    font-size: 2rem;
+    line-height: 110%;
+    letter-spacing: 0.02em;
+  }
 }
 .hero__subtitle {
   margin: 0;
@@ -2014,11 +2061,24 @@ a[href].focus-visible:focus {
   line-height: normal;
   letter-spacing: -0.01375rem;
 }
+@media (orientation: portrait) {
+  .hero__subtitle {
+    width: 60%;
+    font-size: 0.9375rem;
+    line-height: 1.125rem;
+    letter-spacing: -0.01em;
+  }
+}
 .hero__images {
   position: absolute;
   bottom: 0;
   width: 100%;
   height: 50.375rem;
+}
+@media (orientation: portrait) {
+  .hero__images {
+    display: none;
+  }
 }
 .hero__images > * {
   position: absolute;
@@ -2078,6 +2138,41 @@ a[href].focus-visible:focus {
   left: 95%;
   -webkit-transform: translateX(-100%);
           transform: translateX(-100%);
+}
+.hero__button {
+  display: none;
+}
+@media (orientation: portrait) {
+  .hero__button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    min-height: 3.25rem;
+    border-radius: 0.75rem;
+    background-color: #000000;
+    padding: 0.875rem;
+    border: none;
+  }
+}
+.hero__sublayer {
+  display: none;
+}
+@media (orientation: portrait) {
+  .hero__sublayer {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60%;
+    background-color: rgba(255, 0, 0, 0.3);
+  }
 }
 
 /* @mixin hover-focus {

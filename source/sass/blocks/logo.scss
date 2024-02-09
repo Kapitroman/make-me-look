@@ -3,7 +3,7 @@
   align-items: center;
   gap: size(15px);
 
-  @include vp-767 {
+  @include portrait {
     gap: 12px;
   }
 
@@ -11,7 +11,7 @@
     width: size(56px);
     height: size(57px);
 
-    @include vp-767 {
+    @include portrait {
       width: 32px;
       height: 32px;
     }
@@ -29,7 +29,7 @@
     width: size(202px);
     height: size(25px);
 
-    @include vp-767 {
+    @include portrait {
       width: 103px;
       height: 11px;
     }

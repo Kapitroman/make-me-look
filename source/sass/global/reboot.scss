@@ -8,7 +8,7 @@ html,
 body {
   margin: 0;
   padding: 0;
-  min-height: 100vh; //7777
+  min-height: 100dvh; //7777
 }
 
 html {
@@ -16,7 +16,7 @@ html {
   font-weight: 400;
   //font-size: $fz-default;
   //line-height: 24px;
-  font-size: size-desktop-vh($fz-default);
+  font-size: size-desktop-dvh($fz-default);
   line-height: size(24px);
   font-family: $ff-g-text-regular;
   color: $color-default-black;
@@ -32,13 +32,13 @@ html {
   //overflow-x: hidden; //
 	margin: 0; //
   /*
-  @include vp-767 {
+  @include portrait {
     overflow-x: initial;
   }
   */
   //--index-1: calc(100vw / 1920);
-  //--index-2: calc(100vh / 1080);
-  //--index-3: calc((100vw + 100vh) / 3000);
+  //--index-2: calc(100dvh / 1080);
+  //--index-3: calc((100vw + 100dvh) / 3000);
 
   /*
   @include vp-1919 {
@@ -49,22 +49,23 @@ html {
 
   /*
   @include vp-1919 {
-    font-size: size-desktop-vh($fz-default);
+    font-size: size-desktop-dvh($fz-default);
     line-height: size(24px);
   }
   */
+  /*
   @include vp-1919-p {
     font-size: size-desktop-vw($fz-default);
     line-height: size(24px);
   }
-
-  @include vp-767 {
-    font-size: size-desktop-vw($fz-default);
+  */
+  @include portrait {
+    font-size: size-desktop-vw-767($fz-default);
     line-height: size(24px);
   }
   /*
-  @include vp-767-l {
-    font-size: size-desktop-vh($fz-default);
+  @include portrait-l {
+    font-size: size-desktop-dvh($fz-default);
     line-height: size(24px);
   }
   */

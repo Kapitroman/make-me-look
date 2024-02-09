@@ -17,16 +17,16 @@
   @return calc($size-in-px / $fz-default * 1rem);
 }
 
-@function size-desktop-vw($size-in-px) {
-  @return calc($size-in-px / $vp-1920 * 100vw);
+@function size-desktop-vw-767($size-in-px) {
+  @return calc($size-in-px / $vp-375 * 100vw);
 }
 
-@function size-desktop-vh($size-in-px) {
-  @return calc($size-in-px / 1080px * 100vh);
+@function size-desktop-dvh($size-in-px) {
+  @return calc($size-in-px / 1080px * 100dvh);
 }
 
-@function size-desktop-vw-vh($size-in-px) {
-  @return calc($size-in-px  / (1920px + 1080px)  * (100vw + 100vh));
+@function size-desktop-vw-dvh($size-in-px) {
+  @return calc($size-in-px  / (1920px + 1080px)  * (100vw + 100dvh));
 }
 
 

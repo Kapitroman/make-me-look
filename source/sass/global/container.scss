@@ -14,7 +14,7 @@
     //padding: 0 24px;
   }
 
-  @include vp-767 {
-    padding: 0 24px;
+  @include portrait {
+    padding: 0 size(24px);
   }
 }

@@ -10,7 +10,7 @@
 
   background-color: $color-gray-1;
 
-  @include vp-767 {
+  @include portrait {
     min-height: 72px;
     padding: 20px 0;
   }
@@ -30,13 +30,13 @@
 
     margin-right: size(20px);
 
-    @include vp-767 {
+    @include portrait {
       margin-right: 20px;
     }
   }
 
   &__nav {
-    @include vp-767 {
+    @include portrait {
       position: fixed;
       top: 72px;
       left: 0;
@@ -85,7 +85,7 @@
     line-height: normal;
     letter-spacing: -0.15px;
 
-    @include vp-767 {
+    @include portrait {
       flex-direction: column;
       gap: 50px;
 
@@ -99,7 +99,7 @@
   }
 
   &__link {
-    @include vp-767 {
+    @include portrait {
       color: $color-default-white;
     }
   }
@@ -129,7 +129,7 @@
       transition: opacity $trans-default, transform $trans-600;
     }
 
-    @include vp-767 {
+    @include portrait {
       display: flex;
     }
 
@@ -155,7 +155,7 @@
     height: size(57px);
     margin-left: size(20px);
 
-    @include vp-767 {
+    @include portrait {
       display: none;
     }
   }
@@ -165,7 +165,7 @@
     width: 167px;
     height: 50px;
 
-    @include vp-767 {
+    @include portrait {
       display: block;
     }
   }
@@ -176,7 +176,7 @@
     flex-direction: column;
     align-items: center;
 
-    @include vp-767 {
+    @include portrait {
       display: flex;
     }
   }
@@ -204,7 +204,19 @@
 }
 
 .header--shadow {
-  @include vp-767 {
+  @include portrait {
     box-shadow: 1px 2px 4px 0 rgba($color-default-black, 0.1), 0 0 0 4px rgba($color-default-white, 0.7);
+  }
+}
+
+.header--last-section {
+  @media (min-width: $vp-768) {
+    .header__nav {
+      display: none;
+    }
+
+    .header__apple {
+      display: none;
+    }
   }
 }
