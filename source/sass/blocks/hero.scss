@@ -24,7 +24,7 @@
     height: 100dvh;
     padding-top: 72px;
 
-    padding-bottom: 30px;
+    padding-bottom: 35px;
     overflow: hidden;
   }
 
@@ -39,7 +39,7 @@
     @include portrait {
       position: relative;
 
-      height: calc(100dvh - 72px - 30px);
+      height: calc(100dvh - 72px - 35px);
       //height: 100dvh;
       //padding-top: 72px;
 
@@ -188,6 +188,7 @@
     @include portrait {
       width: calc(336px/ 680px * 100dvh);
       height: auto;
+      left: 37%;
     }
   }
 
@@ -203,6 +204,7 @@
       //width: 456px;
       width: calc(456px/ 680px * 100dvh);
       height: auto;
+      left: 51.5%;
     }
   }
 
