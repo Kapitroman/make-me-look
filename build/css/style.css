@@ -1902,10 +1902,15 @@ a[href].focus-visible:focus {
 }
 
 .clothes-items-container {
+  padding: 0 20px 36px 20px;
+}
+.clothes-items-container__content {
   width: 487px;
   border-radius: 20px;
   padding: 16px;
   background-color: #ffffff;
+  -webkit-box-shadow: 0px 24.6645px 36.9968px rgba(150, 158, 174, 0.1);
+          box-shadow: 0px 24.6645px 36.9968px rgba(150, 158, 174, 0.1);
 }
 .clothes-items-container__look-items {
   display: grid;
