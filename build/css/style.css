@@ -708,7 +708,7 @@ a[href].focus-visible:focus {
   border-radius: 31.25rem;
   border: 0.0625rem solid rgba(150, 158, 174, 0.15);
   list-style: none;
-  font-size: 0.9375rem;
+  font-size: calc(0.005 * (100vw + 100dvh));
   line-height: normal;
   letter-spacing: -0.15px;
 }

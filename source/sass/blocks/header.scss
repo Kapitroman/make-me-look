@@ -81,7 +81,8 @@
 
     list-style: none;
 
-    font-size: size(15px);
+    //font-size: size(15px);
+    font-size: calc(15px / (1920px + 1080px)  * (100vw + 100dvh));
     line-height: normal;
     letter-spacing: -0.15px;
 
