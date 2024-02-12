@@ -1,0 +1,12 @@
+mixin clothes-items-container(options)
+  .clothes-items-container&attributes(attributes)
+    .clothes-items-container__look-items
+      each item in options.image
+        - let imageClass = item.addClass ? `clothes-items-container__item clothes-items-container__item--${item.addClass}` : "clothes-items-container__item"
+        div(class= imageClass)
+          +picture(item.path, item.name, item.format, 109, 109, "предмет одежды", true)
+    .clothes-items-container__look-summary
+      each item in options.summary
+        p.clothes-items-container__summary-item
+          +icon("info-check", 24, 24)
+          span=item

@@ -14,14 +14,18 @@ block main
     section#section1.wrapper__panel
       +hero()
     section#section2.wrapper__panel.red
+      +clothes-items-container(clothesItemData[0])
+
       p aaaaaaaaaa
       //- +intro()
       +img("content", "hero", "png", 1676, 806, "модели и предметы одежды")
     section#section3.wrapper__panel.orange
+      +clothes-items-container(clothesItemData[1])
       p aaaaaaaaaa
       //- +intro()
       +img("content", "hero", "png", 1676, 806, "модели и предметы одежды")
     section#section4.wrapper__panel.purple
+      +clothes-items-container(clothesItemData[2])
       +intro()
     section#section5.wrapper__panel.red
       +intro()
