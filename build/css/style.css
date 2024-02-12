@@ -1919,8 +1919,10 @@ a[href].focus-visible:focus {
   width: 100%;
   height: 100%;
   border-radius: 13px;
+  overflow: hidden;
   mix-blend-mode: normal;
   background-color: #F2F2F2;
+  color: #0A0A24;
 }
 .clothes-items-container__item img {
   width: 100%;
@@ -1964,6 +1966,53 @@ a[href].focus-visible:focus {
   width: 24px;
   height: 24px;
   margin-right: 3px;
+}
+
+.clothes-label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 16px;
+  width: 280px;
+  padding: 12px;
+  border-radius: 16px;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0px 18px 35px rgba(0, 0, 0, 0.03);
+          box-shadow: 0px 18px 35px rgba(0, 0, 0, 0.03);
+}
+.clothes-label__image {
+  width: 54px;
+  height: 54px;
+  background-color: #F2F2F2;
+}
+.clothes-label__image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.clothes-label__name {
+  margin: 0;
+  margin-bottom: 4px;
+  font-family: "GolosTextWebVF", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: -0.01em;
+  color: #0A0A24;
+}
+.clothes-label__text {
+  margin: 0;
+  font-family: "GolosTextWebVF", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: -0.01em;
+  color: #8A8A8A;
 }
 
 .panel {

@@ -19,9 +19,12 @@
     width: 100%;
     height: 100%;
     border-radius: 13px;
+    overflow: hidden;
 
     mix-blend-mode: normal;
     background-color: #F2F2F2;
+
+    color: #0A0A24;
 
     img {
       width: 100%;

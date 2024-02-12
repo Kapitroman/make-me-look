@@ -1,0 +1,8 @@
+mixin clothes-label()
+  .clothes-label&attributes(attributes)
+    .clothes-label__image
+      +picture("content/clothes-items", "clothes-item-1-1", "png", 54, 54, "предмет одежды", true)
+      //-+picture(item.path, item.name, item.format, 54, 54, "предмет одежды", true)
+    .clothes-label__info
+      p.clothes-label__name Лонгслив KITH
+      p.clothes-label__text Черный, лето 2023
