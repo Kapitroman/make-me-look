@@ -3,7 +3,7 @@
 
 @import "vendor/normalize";
 // Swiper 8.4.7
-// @import "vendor/swiper";
+@import "vendor/swiper";
 
 // Global
 // ---------------------------------
@@ -32,9 +32,12 @@
 @import "blocks/logo";
 @import "blocks/clothes-items-container";
 @import "blocks/clothes-label";
+@import "blocks/model-items-container";
 
 @import "blocks/wrapper";
 @import "blocks/hero";
+@import "blocks/clothes-item-show";
+
 
 // ---------------------------------
 

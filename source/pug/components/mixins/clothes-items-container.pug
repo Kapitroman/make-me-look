@@ -1,6 +1,6 @@
 mixin clothes-items-container(options)
   .clothes-items-container&attributes(attributes)
-    .clothes-items-container__content
+      //-.clothes-items-container__content
       .clothes-items-container__look-items
         each item in options.image
           - let imageClass = item.addClass ? `clothes-items-container__item clothes-items-container__item--${item.addClass}` : "clothes-items-container__item"

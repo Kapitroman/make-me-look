@@ -1,0 +1,18 @@
+mixin clothes-item-show()
+  .clothes-item-show
+    .container
+      .clothes-item-show__info-items
+        p.clothes-item-show__slogan Загрузи фотографии своих вещей
+        h2.clothes-item-show__title Доверь свой гардероб лучшему из стилистов
+        .clothes-item-show__slider-items.swiper
+          .swiper-wrapper
+            +clothes-items-container(clothesItemData[0]).swiper-slide
+            +clothes-items-container(clothesItemData[1]).swiper-slide
+            +clothes-items-container(clothesItemData[2]).swiper-slide
+          .clothes-item-show__pagination.swiper-pagination
+      .clothes-item-show__slider-models.swiper
+        .swiper-wrapper
+          +model-items-container(modelsItemData[0]).model-items-container--4.swiper-slide
+          +model-items-container(modelsItemData[1]).model-items-container--1.swiper-slide
+          +model-items-container(modelsItemData[2]).model-items-container--2.swiper-slide
+        .clothes-item-show__slider-models-pagination.swiper-pagination

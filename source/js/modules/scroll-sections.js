@@ -1,6 +1,8 @@
+import {matchMedia} from './matchMedia';
+
 gsap.registerPlugin(ScrollTrigger);
 
-const matchMedia = gsap.matchMedia();
+//const matchMedia = gsap.matchMedia();
 
 const scrollSections = () => {
   let container = document.querySelector('.wrapper');

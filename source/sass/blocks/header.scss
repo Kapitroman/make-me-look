@@ -81,7 +81,6 @@
 
     list-style: none;
 
-    //font-size: size(15px);
     font-size: calc(15px / (1920px + 1080px)  * (100vw + 100dvh));
     line-height: normal;
     letter-spacing: -0.15px;
@@ -149,12 +148,17 @@
     }
   }
 
+  &__apple {
+    display: flex;
+    margin-left: size(20px);
+  }
+
   &__logo-apple {
     flex-shrink: 0;
 
     width: size(56px);
     height: size(57px);
-    margin-left: size(20px);
+
 
     @include portrait {
       display: none;
@@ -173,7 +177,6 @@
 
   &__socials {
     display: none;
-    //margin-top: auto;
     flex-direction: column;
     align-items: center;
 

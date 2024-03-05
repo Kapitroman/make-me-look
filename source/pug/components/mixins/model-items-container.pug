@@ -1,0 +1,18 @@
+mixin model-items-container(options)
+  .model-items-container&attributes(attributes)
+    .model-items-container__picture
+      .model-items-container__background-stars
+        img(src="./img/svg/stars.svg", width="308", height="558", alt="тень от модели", loading="lazy")
+      .model-items-container__background-ellipse
+        img(src="./img/svg/ellipse.svg", width="626", height="137", alt="тень от модели", loading="lazy")
+      +picture(options.model[0], options.model[1], options.model[2], 931, 931, "модель и предметы одежды", true)
+      .model-items-container__clothes-items
+        each item in options.labels
+          +clothes-label(item)
+    .model-items-container__summary
+      each item in options.summary
+        p.model-items-container__summary-item
+          +icon("info-check", 24, 24)
+          span=item
+
+

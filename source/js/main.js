@@ -9,6 +9,7 @@ import {uploadFile, uploadImageDrop} from './modules/input-file/init-upload';
 import {Burger} from './modules/burger';
 //import {moveToSection} from './modules/move-to-section';
 import {scrollSections} from './modules/scroll-sections';
+import {initClothesModelsSlider} from './modules/init-clothes-models-slider';
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -41,6 +42,7 @@ window.addEventListener('DOMContentLoaded', () => {
     //moveToSection();
     //init();
     scrollSections();
+    initClothesModelsSlider();
   });
 });
 

@@ -26,16 +26,14 @@
     padding-top: size(116px);
 
     @include portrait {
-      //padding-top: 77px;
       padding-top: 0;
-    }
-
-    @include portrait {
-      //height: 100dvh; // ???
     }
   }
 }
 
+.aaa {
+  background-color: rgba(chartreuse, 0.2);
+}
 
 .blue {
   /*
