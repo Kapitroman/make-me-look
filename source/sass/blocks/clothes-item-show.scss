@@ -6,7 +6,7 @@
 
   .container {
     display: flex;
-    justify-content: space-between;
+    //justify-content: space-between;
     align-items: center;
 
     @include portrait {
@@ -18,8 +18,12 @@
   }
 
   &__info-items {
-    width: 34.42%;
-    margin-right: 3.49%;
+    width: 35%;
+    //margin-right: 3.49%;
+    //margin-right: 28%;
+    margin-right: calc(500px / (1920px + 1080px)  * (100vw + 100dvh));
+
+    flex-shrink: 0;
 
     @include portrait {
       width: 100%;
@@ -33,7 +37,8 @@
 
     font-family: $ff-g-text-regular;
     font-weight: 400;
-    font-size: calc(22px / (1920px + 1080px)  * (100vw + 100dvh));
+    //font-size: calc(22px / (1920px + 1080px)  * (100vw + 100dvh));
+    font-size: size(22px);
     line-height: 1.18;
     letter-spacing: -0.01em;
     color: #7B7B7B;
@@ -48,16 +53,19 @@
   }
 
   &__title {
+    width: 90%;
     margin: 0;
     margin-bottom: size(80px);
 
     font-family: $ff-g-ui-medium;
     font-weight: 500;
-    font-size: calc(48px / (1920px + 1080px)  * (100vw + 100dvh));
+    //font-size: calc(48px / (1920px + 1080px)  * (100vw + 100dvh));
+    font-size: size(48px);
     line-height: 115%;
     color: #000000;
 
     @include portrait {
+      width: 100%;
       margin-bottom: calc(30px / 375px * 100vw);
 
       font-size: calc(24px / 375px * 100vw);
@@ -68,9 +76,12 @@
   }
 
   &__slider-items {
-    width: calc(487px / (1920px + 1080px)  * (100vw + 100dvh));
-    border-radius: calc(20px / (1920px + 1080px) * (100vw + 100dvh));
-    box-shadow: 0px calc(25px / (1920px + 1080px) * (100vw + 100dvh)) calc(37px / (1920px + 1080px)  * (100vw + 100dvh))  rgba(150, 158, 174, 0.1);
+    //width: calc(487px / (1920px + 1080px)  * (100vw + 100dvh));
+    //border-radius: calc(20px / (1920px + 1080px) * (100vw + 100dvh));
+    width: size(487px);
+    border-radius: size(20px);
+    //box-shadow: 0px calc(25px / (1920px + 1080px) * (100vw + 100dvh)) calc(37px / (1920px + 1080px)  * (100vw + 100dvh))  rgba(150, 158, 174, 0.1);
+    box-shadow: 0px size(25px) size(37px)  rgba(150, 158, 174, 0.1);
 
     @include portrait {
       display: none;
@@ -79,13 +90,19 @@
 
   &__pagination.swiper-pagination {
     position: static;
+    //bottom: -size(50px);
 
     display: flex;
     justify-content: center;
     align-items: flex-end;
     gap: size(8px);
 
+    width: size(487px);
     height: size(38px);
+
+    @include portrait {
+      display: none;
+    }
 
     .swiper-pagination-bullet {
       width: size(8px);
@@ -93,6 +110,7 @@
       margin: 0;
 
       background-color: #D9D9D9;
+      background-color: #7b7b7b;
     }
 
     .swiper-pagination-bullet-active {
@@ -103,9 +121,12 @@
   }
 
   &__slider-models {
-    margin-right: 6%;
+    //margin-right: 6%;
+    transform: translateX(-50%);
     height: calc(100dvh - #{size(116px)});
     aspect-ratio: 931 / 931;
+
+    flex-shrink: 0;
 
     @include portrait {
       width:  calc(431px / 375px * 100vw);
@@ -113,6 +134,8 @@
       aspect-ratio: initial;
       margin-right: 0;
       margin-left: 0;
+
+      transform: none;
     }
   }
 
@@ -134,7 +157,8 @@
         height: calc(8px / 375px * 100vw);
         margin: 0;
 
-        background-color: #D9D9D9;
+        //background-color: #D9D9D9;
+        background-color: #7b7b7b;
       }
 
       .swiper-pagination-bullet-active {
@@ -147,6 +171,11 @@
 }
 
 .clothes-item-show__slider-items.swiper {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.clothes-item-show__slider-models.swiper {
   margin-left: 0;
   margin-right: 0;
 }

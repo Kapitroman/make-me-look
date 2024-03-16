@@ -1,0 +1,77 @@
+mixin app-features
+  .app-features
+    .app-features__first-step-wrapper
+      .app-features__intro
+        p.app-features__intro-slogan Примеряй образы виртуально
+        h2.app-features__title Мы&nbsp;взяли&nbsp;лучшее из&nbsp;опыта&nbsp;стилистов и&nbsp;объединили&nbsp;в&nbsp;продукте:
+      .app-features__first-step
+        .app-features__item
+          p.app-features__item-number
+            svg(width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg")
+              path(d="M10.8801 23.923V20.595V5.58695L5.6001 9.33095V5.36295L11.0081 1.52295H14.7201V20.595V23.923H10.8801Z" fill="white")
+          p.app-features__item-text Виртуальный гардероб
+        .app-features__cards
+          .app-features__card
+            .app-features__card-head
+              .app-features__card-head-text
+                p.app-features__card-head-title Базовый образ на прогулку
+                p.app-features__card-head-summary 2 новые вещи
+              .app-features__card-head-icon
+                +icon("info-check", 28, 28)
+            .app-features__card-clothes-container
+              .app-features__card-clothes-item
+                +picture("content/features-clothes", "features-clothes-01", "png", 178, 177, "фото предмета одежды", true)
+              .app-features__card-clothes-item
+                +picture("content/features-clothes", "features-clothes-02", "png", 178, 177, "фото предмета одежды", true)
+          .app-features__card.app-features__card--last
+            .app-features__card-head
+              .app-features__card-head-text
+                p.app-features__card-head-title Весеннее настроение
+                p.app-features__card-head-summary 2 новые вещи
+              .app-features__card-head-icon
+                span
+            .app-features__card-clothes-container
+              .app-features__card-clothes-item
+                +picture("content/features-clothes", "features-clothes-03", "png", 178, 177, "фото предмета одежды", true)
+              .app-features__card-clothes-item
+                +picture("content/features-clothes", "features-clothes-04", "png", 90, 85, "фото предмета одежды", true)
+              .app-features__card-clothes-item
+                +picture("content/features-clothes", "features-clothes-06", "png", 91, 177, "фото предмета одежды", true)
+              .app-features__card-clothes-item
+                +picture("content/features-clothes", "features-clothes-05", "png", 90, 85, "фото предмета одежды", true)
+      .app-features__plus
+        +icon("plus", 40, 40)
+    .app-features__second-step
+      .app-features__item
+        p.app-features__item-number
+          svg(width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg")
+            path(d="M3.84082 24.0948V21.0868L12.1928 13.8548C12.8755 13.2574 13.4515 12.7241 13.9208 12.2548C14.4115 11.7854 14.8062 11.3481 15.1048 10.9428C15.4248 10.5161 15.6488 10.1001 15.7768 9.69477C15.9262 9.28944 16.0008 8.86277 16.0008 8.41477C16.0008 7.86011 15.9155 7.35877 15.7448 6.91077C15.5742 6.46277 15.3288 6.07877 15.0088 5.75877C14.7102 5.43877 14.3262 5.19344 13.8568 5.02277C13.4088 4.83077 12.8968 4.73477 12.3208 4.73477C11.6382 4.73477 11.0302 4.83077 10.4968 5.02277C9.96349 5.19344 9.50482 5.47077 9.12082 5.85477C8.75815 6.21744 8.48082 6.67611 8.28882 7.23077C8.09682 7.78544 8.00082 8.44677 8.00082 9.21477H4.16082C4.16082 8.02011 4.35282 6.94277 4.73682 5.98277C5.12082 5.02277 5.66482 4.20144 6.36882 3.51877C7.07282 2.81477 7.92615 2.28144 8.92882 1.91877C9.95282 1.53477 11.0835 1.34277 12.3208 1.34277C13.5368 1.34277 14.6142 1.52411 15.5528 1.88677C16.4915 2.22811 17.2702 2.71877 17.8888 3.35877C18.5288 3.97744 19.0088 4.72411 19.3288 5.59877C19.6702 6.45211 19.8408 7.39077 19.8408 8.41477C19.8408 9.18277 19.7128 9.90811 19.4568 10.5908C19.2222 11.2734 18.8808 11.9348 18.4328 12.5748C18.0062 13.1934 17.4835 13.8014 16.8648 14.3988C16.2675 14.9748 15.6062 15.5508 14.8808 16.1268L9.18482 20.7668H20.1608V24.0948H3.84082Z" fill="white")
+        p.app-features__item-text Персональный ИИ-стилист
+      .app-features__model-picture
+        +picture("content/models", "model-5", "png", 850, 850, "фото модели с предметами одежды", true)
+        .app-features__background-ellipse
+          img(src="./img/svg/ellipse.svg", width="626", height="137", alt="тень от модели", loading="lazy")
+      .app-features__plus
+        +icon("plus", 40, 40)
+      .app-features__add-info
+        .app-features__add-info-item
+          .app-features__add-info-item-values
+            +icon("progress-round", 79, 79)
+            span.app-features__add-info-item-text 98%
+          p.app-features__add-info-item-name Потрясающий образ&nbsp;сегодня
+        .app-features__add-info-item
+          .app-features__add-info-item-values
+            p.app-features__add-info-item-values-line
+              span.app-features__add-info-item-values-line-name рост
+              span.app-features__add-info-item-values-line-value 175
+            p.app-features__add-info-item-values-line
+              span.app-features__add-info-item-values-line-name вес
+              span.app-features__add-info-item-values-line-value 54
+          p.app-features__add-info-item-name Параметры фигуры
+    .app-features__third-step
+      .app-features__item
+        p.app-features__item-number
+          svg(width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg")
+            path(d="M12.0327 24.3579C10.7101 24.3579 9.5474 24.1979 8.54473 23.8779C7.5634 23.5366 6.7314 23.0672 6.04873 22.4699C5.3874 21.8726 4.8754 21.1579 4.51273 20.3259C4.1714 19.4939 4.00073 18.5872 4.00073 17.6059H7.84073C7.84073 18.1392 7.92607 18.6192 8.09673 19.0459C8.2674 19.4512 8.5234 19.8032 8.86473 20.1019C9.20607 20.3792 9.63273 20.5926 10.1447 20.7419C10.6781 20.8912 11.2967 20.9659 12.0007 20.9659C13.3874 20.9659 14.4221 20.6779 15.1047 20.1019C15.8087 19.5046 16.1607 18.6726 16.1607 17.6059C16.1607 16.5179 15.8407 15.6646 15.2007 15.0459C14.5607 14.4059 13.4941 14.0859 12.0007 14.0859H9.76073V10.8859H12.0007C13.2807 10.8859 14.2407 10.6192 14.8807 10.0859C15.5207 9.53124 15.8407 8.74191 15.8407 7.71791C15.8407 6.69391 15.5314 5.92591 14.9127 5.41391C14.3154 4.90191 13.3447 4.64591 12.0007 4.64591C11.3394 4.64591 10.7634 4.72057 10.2727 4.86991C9.78207 4.99791 9.37673 5.18991 9.05673 5.44591C8.73673 5.70191 8.50207 6.02191 8.35273 6.40591C8.2034 6.76857 8.12873 7.19524 8.12873 7.68591H4.28873C4.28873 6.72591 4.44873 5.85124 4.76873 5.06191C5.11007 4.25124 5.60073 3.56857 6.24073 3.01391C6.90207 2.45924 7.71273 2.03257 8.67273 1.73391C9.63273 1.41391 10.7421 1.25391 12.0007 1.25391C13.2594 1.25391 14.3687 1.41391 15.3287 1.73391C16.2887 2.05391 17.0887 2.49124 17.7287 3.04591C18.3687 3.57924 18.8487 4.20857 19.1687 4.93391C19.5101 5.65924 19.6807 6.43791 19.6807 7.26991C19.6807 8.54991 19.3394 9.62724 18.6567 10.5019C17.9954 11.3552 17.0567 11.9632 15.8407 12.3259C17.1421 12.7099 18.1554 13.3606 18.8807 14.2779C19.6274 15.1739 20.0007 16.3899 20.0007 17.9259C20.0007 18.8219 19.8301 19.6646 19.4887 20.4539C19.1474 21.2432 18.6354 21.9259 17.9527 22.5019C17.2914 23.0779 16.4594 23.5366 15.4567 23.8779C14.4754 24.1979 13.3341 24.3579 12.0327 24.3579Z" fill="white")
+        p.app-features__item-text Машинное обучение и&nbsp;функции FashionGPT
+      p.app-features__title это поможет сэкономить твои нервы, время и деньги

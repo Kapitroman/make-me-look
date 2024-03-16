@@ -1,0 +1,629 @@
+.app-features {
+  display: flex;
+  justify-content: space-between;
+  padding-top: size(50px);
+
+  transform: translateX(-8%);
+
+  @include portrait {
+    flex-direction: column;
+    justify-content: initial;
+
+    padding-top: calc(60px / 375px * 100vw);
+
+    transform: none;
+  }
+
+  &__first-step-wrapper {
+    background-color: rgba(brown, 0.5);
+    position: relative;
+    z-index: 4;
+
+    @include portrait {
+      margin-bottom: calc(48px / 375px * 100vw);
+    }
+  }
+
+  &__intro {
+    margin-bottom: size(48px);
+
+    @include portrait {
+      margin-bottom: calc(30px / 375px * 100vw);
+      padding: 0 calc(25px / 375px * 100vw);
+
+      text-align: center;
+    }
+  }
+
+  &__first-step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include portrait {
+
+    }
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    gap: size(24px);
+
+    margin-bottom: size(24px);
+
+    @include portrait {
+      flex-direction: row;
+      align-items: center;
+      gap: calc(12px / 375px * 100vw);
+
+      margin-bottom: calc(20px / 375px * 100vw);
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  &__item-number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+
+    width: size(56px);
+    height: size(56px);
+    margin: 0;
+    border-radius: 50%;
+
+    //font-family: $ff-g-ui-medium;
+    //font-weight: 500;
+    //font-size: size(24px);
+    //line-height: size(24px);
+
+    //color: #ffffff;
+
+    background-color: $color-default-black;
+
+    @include portrait {
+      width: calc(32px / 375px * 100vw);
+      height: calc(32px / 375px * 100vw);
+    }
+
+    svg {
+      width: size(24px);
+      height: size(24px);
+
+      @include portrait {
+        width: calc(12px / 375px * 100vw);
+        height: calc(30px / 375px * 100vw);
+      }
+    }
+  }
+
+  &__item-text {
+    margin: 0;
+
+    font-size: size(32px);
+    line-height: size(38px);
+    letter-spacing: -0.01em;
+
+    @include portrait {
+      font-size: calc(17px / 375px * 100vw);
+      line-height: calc(20px / 375px * 100vw);
+    }
+  }
+
+  &__intro-slogan {
+    margin: 0;
+    margin-bottom: size(12px);
+
+    font-size: size(22px);
+    line-height: size(26px);
+    letter-spacing: -0.01em;
+    color: #7B7B7B;
+
+    @include portrait {
+      margin-bottom: calc(5px / 375px * 100vw);
+
+      font-size: calc(14px / 375px * 100vw);
+      line-height: calc(17px / 375px * 100vw);
+    }
+  }
+
+  &__title {
+    margin: 0;
+    width: calc(592px / (1920px + 1080px)  * (100vw + 100dvh));
+
+    font-family: $ff-g-ui-medium;
+    font-weight: 500;
+    font-size: size(48px);
+    line-height: 115%;
+
+    @include portrait {
+      width: 100%;
+
+      font-size: calc(24px / 375px * 100vw);
+      line-height: 105%;
+      letter-spacing: 0.02em;
+    }
+  }
+
+  &__cards {
+    position: relative;
+
+    @include portrait {
+      transform: translateX(calc(-12px / 375px * 100vw));
+
+      padding-bottom: calc(126px / 375px * 100vw);
+    }
+  }
+
+
+  &__card {
+    position: relative;
+    z-index: 1;
+
+    width: size(385px); ////
+    padding: size(13px);
+    border-radius: size(16px);
+
+    background-color: #ffffff;
+
+    @include portrait {
+      width: calc(258px / 375px * 100vw);
+      padding:  calc(8px / 375px * 100vw);
+      border-radius:  calc(11px / 375px * 100vw);
+    }
+  }
+
+  &__card-head {
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: size(10px);
+
+    @include portrait {
+      margin-bottom:  calc(7px / 375px * 100vw);
+    }
+  }
+
+  &__card-head-title {
+    margin: 0;
+    margin-bottom: size(3px);
+
+    font-family: $ff-g-ui-medium;
+    font-weight: 500;
+    font-size: size(16px);
+    line-height: size(19px);
+    letter-spacing: -0.01em;
+
+    @include portrait {
+      margin-bottom: calc(2px / 375px * 100vw);
+
+      font-size: calc(12px / 375px * 100vw);
+      line-height: calc(14px / 375px * 100vw);
+    }
+  }
+
+  &__card-head-summary {
+    margin: 0;
+
+    font-size: size(11px);
+    line-height: size(14px);
+    letter-spacing: -0.01em;
+    color: #8A8A8A;
+
+    @include portrait {
+      font-size: calc(9px / 375px * 100vw);
+      line-height: calc(11px / 375px * 100vw);
+    }
+  }
+
+  &__card-head-icon {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+
+    width: size(28px);
+    height: size(28px);
+    margin-left: size(20px);
+
+    @include portrait {
+      width: calc(18px / 375px * 100vw);
+      height: calc(18px / 375px * 100vw);
+      margin-left: calc(12px / 375px * 100vw);
+    }
+
+    svg {
+      width: size(28px);
+      height: size(28px);
+
+      @include portrait {
+        width: calc(18px / 375px * 100vw);
+        height: calc(18px / 375px * 100vw);
+      }
+    }
+  }
+
+  &__card-clothes-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows:  1rf 1fr;
+    gap: size(6.5px);
+    grid-auto-flow: row dense;
+
+    @include portrait {
+      gap: calc(4px / 375px * 100vw);
+    }
+  }
+
+  &__card-clothes-item {
+    grid-row: span 2;
+    grid-column: span 2;
+
+    aspect-ratio: 89 /85;
+    border-radius: size(13px);
+
+    background-color: #f2f2f2;
+
+    @include portrait {
+      border-radius: calc(9px / 375px * 100vw);
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+
+      object-fit: contain;
+    }
+  }
+
+  &__card--last {
+    position: absolute;
+    top: size(119px);
+    left: size(39px);
+    z-index: 0;
+
+    transform: rotate(23deg);
+
+    @include portrait {
+      top: calc(80px / 375px * 100vw);
+      left: calc(26px / 375px * 100vw);
+    }
+
+    .app-features__card-clothes-item:nth-child(2) {
+      grid-row: span 1;
+      grid-column: span 1;
+    }
+
+    .app-features__card-clothes-item:nth-child(3) {
+      grid-row: span 2;
+      grid-column: span 1;
+
+      aspect-ratio: 89 / 176;
+    }
+
+    .app-features__card-clothes-item:nth-child(4) {
+      grid-row: span 1;
+      grid-column: span 1;
+    }
+
+    .app-features__card-head-icon {
+      span {
+        width: size(27px);
+        height: size(27px);
+        border-radius: 50%;
+        border: 1px solid #d2d2d2;
+
+        @include portrait {
+          width: calc(17px / 375px * 100vw);
+          height: calc(17px / 375px * 100vw);
+        }
+      }
+    }
+  }
+
+  &__second-step {
+    position: relative;
+    background-color: rgba(chartreuse, 0.5);
+
+    transform: translateX(-36%);
+
+    @include portrait {
+      transform: none;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      margin-bottom: calc(70px / 375px * 100vw);
+    }
+
+    .app-features__item {
+      position: absolute;
+      top: size(124px);
+      right: size(-30px);
+      z-index: 3;
+
+      flex-direction: row;
+      align-items: center;
+
+      width: size(315px);
+
+      @include portrait {
+        position: static;
+
+        width: auto;
+      }
+    }
+
+    .app-features__plus {
+      right: 0;
+
+      @include portrait {
+        bottom: calc(-50px / 375px * 100vw);
+        left: auto;
+        right: calc(54px / 375px * 100vw);
+      }
+    }
+  }
+
+  &__model-picture {
+    width: size(850px);
+    aspect-ratio: 1 / 1;
+
+    background-color: rgba($color: #000000, $alpha: 0.1);
+
+    @include portrait {
+      position: relative;
+      z-index: 2;
+
+      width: calc(436px / 375px * 100vw);
+
+      transform: translateX(calc(-20px / 375px * 100vw));
+    }
+
+    img {
+      position: relative;
+      z-index: 2;
+
+      width: 100%;
+      height: 100%;
+
+      object-fit: cover;
+    }
+  }
+
+  &__background-ellipse {
+    position: absolute;
+    bottom: 3%;
+    left: 50%;
+    transform: translateX(-45%);
+
+    width: size(626px);
+    height: size(137px);
+
+    @include portrait {
+      width: calc(325px / 375px * 100vw);
+      height: calc(71px / 375px * 100vw);
+    }
+  }
+
+  &__add-info {
+    position: absolute;
+    top: size(58px);
+    right: size(-245px);
+
+    @include portrait {
+      top: calc(67px / 375px * 100vw);
+      left: calc(33px / 375px * 100vw);
+      right: auto;
+    }
+  }
+
+  &__add-info-item {
+    position: relative;
+    z-index: 1;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    min-width: size(139px);
+    padding: size(16px) size(24px);
+    border-radius: size(25px);
+
+    background-color: #ffffff;
+    box-shadow: 0px size(16px) size(24px) rgba(150, 158, 174, 0.1);
+
+    @include portrait {
+      min-width: calc(109px / 375px * 100vw);
+      padding: calc(12px / 375px * 100vw) calc(16px / 375px * 100vw);
+      border-radius: calc(21px / 375px * 100vw);
+
+      transform: rotate(-20deg);
+    }
+  }
+
+  &__add-info-item-values {
+    display: grid;
+    margin-bottom: size(12px);
+
+    @include portrait {
+      margin-bottom: calc(10px / 375px * 100vw);
+    }
+
+    & > * {
+      grid-area: 1 / -1;
+      margin: auto;
+    }
+
+    svg {
+      width: size(79px);
+      height: size(79px);
+
+      @include portrait {
+        width: calc(67px / 375px * 100vw);
+        height: calc(67px / 375px * 100vw);
+      }
+    }
+  }
+
+  &__add-info-item-text {
+    font-family: $ff-g-ui-medium;
+    font-weight: 500;
+    font-size: size(24px);
+    line-height: size(29px);
+    letter-spacing: -0.01em;
+    color: #0A0A24;
+
+    @include portrait {
+      font-size: calc(20px / 375px * 100vw);
+      line-height: calc(24px / 375px * 100vw);
+    }
+  }
+
+  &__add-info-item-name {
+    width: min-content;
+    margin: 0;
+
+    font-size: size(13px);
+    line-height: size(16px);
+    text-align: center;
+    letter-spacing: -0.01em;
+    color: #8A8A8A;
+    text-align: center;
+
+    @include portrait {
+      font-size: calc(11px / 375px * 100vw);
+      line-height: calc(13px / 375px * 100vw);
+    }
+  }
+
+  &__add-info-item:last-child {
+    position: absolute;
+    top: size(60px);
+    left: size(60px);
+    z-index: 0;
+
+    transform: rotate(9deg);
+
+    @include portrait {
+      top: calc(98px / 375px * 100vw);
+      left: calc(180px / 375px * 100vw);
+
+      transform: rotate(9deg);
+    }
+
+    .app-features__add-info-item-values {
+      display: block;
+    }
+  }
+
+  &__add-info-item-values-line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 0;
+  }
+
+  .app-features__add-info-item-values-line + .app-features__add-info-item-values-line {
+    margin-top: size(12px);
+
+    @include portrait {
+      margin-top: calc(10px / 375px * 100vw);
+    }
+  }
+
+  &__add-info-item-values-line-name {
+    margin-right: size(10px);
+
+    font-size: size(13px);
+    line-height: size(16px);
+    letter-spacing: -0.03em;
+
+    @include portrait {
+      margin-right: calc(10px / 375px * 100vw);
+
+      font-size: calc(11px / 375px * 100vw);
+      line-height: calc(13px / 375px * 100vw);
+    }
+  }
+
+  &__add-info-item-values-line-value {
+    font-family: $ff-g-ui-medium;
+    font-weight: 500;
+    font-size: size(24px);
+    line-height: size(29px);
+    letter-spacing: -0.01em;
+    color: #0A0A24;
+
+    @include portrait {
+      font-size: calc(18px / 375px * 100vw);
+      line-height: calc(22px / 375px * 100vw);
+    }
+  }
+
+  &__third-step {
+    background-color: rgba(blue, 0.5);
+    margin-top: auto;
+
+    transform: translateX(-53%);
+
+    @include portrait {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      margin-bottom: calc(52px / 375px * 100vw);
+
+      transform: none;
+    }
+
+    .app-features__item {
+      width: size(385px);
+      margin-bottom: size(51px);
+
+      @include portrait {
+        width: calc(250px / 375px * 100vw);
+        margin-bottom: calc(30px / 375px * 100vw);
+      }
+    }
+
+    .app-features__title {
+      width: size(645px);
+      margin-bottom: size(118px);
+
+      @include portrait {
+        width: calc(327px / 375px * 100vw);
+        margin-bottom: 0;
+        text-align: center;
+      }
+    }
+  }
+
+  &__plus {
+    position: absolute;
+    top: size(276px);
+    right: size(44px);
+    z-index: 4;
+
+    @include portrait {
+      top: initial;
+      bottom: calc(-15px / 375px * 100vw);
+      left: calc(51px / 375px * 100vw);
+    }
+
+    svg {
+      display: block;
+
+      width: size(40px);
+      height: size(40px);
+
+      @include portrait {
+        width: calc(30px / 375px * 100vw);
+        height: calc(30px / 375px * 100vw);
+      }
+    }
+  }
+}
