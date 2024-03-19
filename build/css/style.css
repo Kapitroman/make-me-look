@@ -3151,6 +3151,161 @@ a[href].focus-visible:focus {
   }
 }
 
+.person-card {
+  width: 22.5rem;
+  padding: 1.25rem;
+  border-radius: 1.5625rem;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  -webkit-box-shadow: 0px 0.625rem 2.5rem rgba(0, 0, 0, 0.08);
+          box-shadow: 0px 0.625rem 2.5rem rgba(0, 0, 0, 0.08);
+}
+@media (orientation: portrait) {
+  .person-card {
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+    width: 79.4666666667vw;
+    padding: 4.2666666667vw;
+    border-radius: 5.6vw;
+    -webkit-box-shadow: 0px 2.1333333333vw 8.8vw rgba(0, 0, 0, 0.08);
+            box-shadow: 0px 2.1333333333vw 8.8vw rgba(0, 0, 0, 0.08);
+  }
+}
+.person-card__head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 0.75rem;
+}
+@media (orientation: portrait) {
+  .person-card__head {
+    margin-bottom: 2.6666666667vw;
+  }
+}
+.person-card__head-img {
+  width: 4rem;
+  height: 4rem;
+}
+@media (orientation: portrait) {
+  .person-card__head-img {
+    width: 14.1333333333vw;
+    height: 14.1333333333vw;
+  }
+}
+.person-card__head-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.person-card__head-text {
+  padding: 0.5625rem;
+}
+@media (orientation: portrait) {
+  .person-card__head-text {
+    padding: 2.4vw;
+  }
+}
+.person-card__head-title {
+  margin: 0;
+  margin-bottom: 0.25rem;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  letter-spacing: -0.01em;
+  color: #0A0A24;
+}
+@media (orientation: portrait) {
+  .person-card__head-title {
+    margin-bottom: 0.8vw;
+    font-size: 3.7333333333vw;
+    line-height: 4.5333333333vw;
+  }
+}
+.person-card__head-description {
+  margin: 0;
+  font-size: 0.875rem;
+  line-height: 1.0625rem;
+  letter-spacing: -0.01em;
+  color: #8A8A8A;
+}
+@media (orientation: portrait) {
+  .person-card__head-description {
+    font-size: 2.9333333333vw;
+    line-height: 3.4666666667vw;
+  }
+}
+.person-card__tags {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 0.75rem;
+  margin: 0;
+  margin-bottom: 0.75rem;
+  font-size: 0.75rem;
+  line-height: 0.875rem;
+  letter-spacing: -0.01em;
+  color: #000000;
+}
+@media (orientation: portrait) {
+  .person-card__tags {
+    gap: 2.6666666667vw;
+    margin-bottom: 2.6666666667vw;
+    font-size: 2.9333333333vw;
+    line-height: 3.4666666667vw;
+  }
+}
+.person-card__message {
+  margin: 0;
+  padding: 0.875rem 1rem;
+  border-radius: 0.75rem;
+  font-size: 0.875rem;
+  line-height: 1.0625rem;
+  letter-spacing: -0.01em;
+  color: #0A0A24;
+  background-color: #f1f1f2;
+}
+@media (orientation: portrait) {
+  .person-card__message {
+    padding: 2.9333333333vw 3.4666666667vw;
+    border-radius: 3.2vw;
+    font-size: 2.9333333333vw;
+    line-height: 3.4666666667vw;
+  }
+}
+
+.person-card:nth-child(1),
+.person-card:nth-child(2),
+.person-card:nth-child(3) {
+  position: absolute;
+}
+@media (orientation: portrait) {
+  .person-card:nth-child(1),
+.person-card:nth-child(2),
+.person-card:nth-child(3) {
+    position: static;
+  }
+}
+
+.person-card:nth-child(1) {
+  top: 11.3125rem;
+  left: -11.875rem;
+}
+
+.person-card:nth-child(2) {
+  top: 5.125rem;
+  left: 27.5rem;
+}
+
+.person-card:nth-child(3) {
+  top: 23.1875rem;
+  left: 30.375rem;
+}
+
 .panel {
   width: 100%;
   height: 100%;
@@ -4300,6 +4455,136 @@ a[href].focus-visible:focus {
   .app-features__plus svg {
     width: 8vw;
     height: 8vw;
+  }
+}
+
+.who-for {
+  background-color: rgba(255, 165, 0, 0.3);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+}
+@media (orientation: portrait) {
+  .who-for {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+.who-for__view {
+  background-color: rgba(255, 255, 0, 0.3);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+  margin-top: auto;
+  margin-right: auto;
+}
+@media (orientation: portrait) {
+  .who-for__view {
+    width: 100%;
+  }
+}
+.who-for__view-screens-container {
+  position: relative;
+  height: 53.125rem;
+  aspect-ratio: 590/850;
+  background-color: rgba(0, 128, 0, 0.3);
+}
+@media (orientation: portrait) {
+  .who-for__view-screens-container {
+    aspect-ratio: 374/559;
+    height: 149.0666666667vw;
+  }
+}
+.who-for__view-screens-container img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.who-for__view-ipone {
+  width: 100%;
+  height: 100%;
+}
+@media (orientation: portrait) {
+  .who-for__view-ipone {
+    display: none;
+  }
+}
+.who-for__view-screen-landscape {
+  position: absolute;
+  z-index: 2;
+  bottom: 0;
+  left: 1.5625rem;
+  height: 51.75rem;
+  border-radius: 4.8125rem 4.8125rem 0 0;
+  aspect-ratio: 537/828;
+  overflow: hidden;
+}
+@media (orientation: portrait) {
+  .who-for__view-screen-landscape {
+    display: none;
+  }
+}
+.who-for__view-screen-portrait {
+  display: none;
+}
+@media (orientation: portrait) {
+  .who-for__view-screen-portrait {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 1.8666666667vw;
+    height: 111.4666666667vw;
+    aspect-ratio: 367/418;
+  }
+}
+.who-for__view-screen-portrait-piece-card {
+  display: none;
+}
+@media (orientation: portrait) {
+  .who-for__view-screen-portrait-piece-card {
+    display: block;
+    position: absolute;
+    bottom: 5.76vw;
+    right: 0;
+    aspect-ratio: 57/183;
+    height: 48.8vw;
+  }
+}
+.who-for__person-cards {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  background-color: rgba(233, 150, 122, 0.3);
+}
+@media (orientation: portrait) {
+  .who-for__person-cards {
+    top: 0;
+    left: 4.5333333333vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 2.6666666667vw;
+    width: calc(100% - 4.5333333333vw);
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+  .who-for__person-cards::-webkit-scrollbar {
+    display: none;
+  }
+}
+.who-for__features {
+  background-color: rgba(0, 128, 128, 0.3);
+  width: 50%;
+}
+@media (orientation: portrait) {
+  .who-for__features {
+    width: 100%;
   }
 }
 

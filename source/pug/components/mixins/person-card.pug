@@ -1,0 +1,12 @@
+mixin person-card(options)
+  .person-card
+    .person-card__head
+      .person-card__head-img
+        +picture(options.image[0], options.image[1], options.image[2], 64, 64, "фото персоны", true)
+      .person-card__head-text
+        p.person-card__head-title=options.title
+        p.person-card__head-description=options.description
+    p.person-card__tags
+      each item in options.tags
+        span=item
+    p.person-card__message!=options.message

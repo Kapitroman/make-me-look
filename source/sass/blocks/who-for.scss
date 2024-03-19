@@ -1,0 +1,148 @@
+.who-for {
+  background-color: rgba(orange, 0.3);
+
+  display: flex;
+
+  height: 100%;
+
+  @include portrait {
+    flex-direction: column;
+  }
+
+  &__view {
+    background-color: rgba(yellow, 0.3);
+
+    display: flex;
+
+    width: 50%;
+    margin-top: auto;
+    margin-right: auto;
+
+    @include portrait {
+      width: 100%;
+    }
+  }
+
+  &__view-screens-container {
+    position: relative;
+    // width: 590px;
+    height: size(850px);
+
+    aspect-ratio: 590 / 850;
+
+    background-color: rgba(green, 0.3);
+
+    @include portrait {
+      aspect-ratio: 374 / 559;
+
+      height: calc(559px / 375px * 100vw);
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+
+      object-fit: cover;
+    }
+  }
+
+  &__view-ipone {
+    width: 100%;
+    height: 100%;
+
+    @include portrait {
+      display: none;
+    }
+  }
+
+  &__view-screen-landscape {
+    position: absolute;
+    z-index: 2;
+    // bottom: size(-2px);
+    bottom: 0;
+    left: size(25px);
+
+    height: size(828px);
+    border-radius: size(77px) size(77px) 0 0;
+
+    aspect-ratio: 537 / 828;
+
+    overflow: hidden;
+
+    @include portrait {
+      display: none;
+      //left: calc(-8px / 375px * 100vw);
+
+      //height: calc(418px / 375px * 100vw);
+      //aspect-ratio: 367 / 418;
+    }
+  }
+
+  &__view-screen-portrait {
+    display: none;
+
+    @include portrait {
+      display: block;
+      position: absolute;
+
+      bottom: 0;
+      //left: calc(-8px / 375px * 100vw);
+      right: calc(7px / 375px * 100vw);
+
+      height: calc(418px / 375px * 100vw);
+      aspect-ratio: 367 / 418;
+    }
+  }
+
+  &__view-screen-portrait-piece-card {
+    display: none;
+
+    @include portrait {
+      display: block;
+
+      position: absolute;
+      bottom: calc(21.6px / 375px * 100vw);
+      right: 0;
+
+      aspect-ratio: 57 / 183;
+      height: calc(183px / 375px * 100vw);
+    }
+  }
+
+  &__person-cards {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+
+    background-color: rgba(darksalmon, 0.3);
+
+    @include portrait {
+      top: 0;
+      left: calc(17px / 375px * 100vw);
+
+      display: flex;
+      gap: calc(10px / 375px * 100vw);
+
+
+      width: calc(100% - 17px / 375px * 100vw);
+      //white-space: nowrap;
+      overflow-x: auto;
+      scrollbar-width: none;
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
+    }
+  }
+
+  &__features {
+    background-color: rgba(teal, 0.3);
+
+    width: 50%;
+
+    @include portrait {
+      width: 100%;
+    }
+  }
+}

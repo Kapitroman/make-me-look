@@ -1,0 +1,17 @@
+mixin who-for()
+  .who-for&attributes(attributes)
+    .who-for__view
+      .who-for__view-screens-container
+        .who-for__person-cards
+          each item in personCards
+            +person-card(item)
+        .who-for__view-ipone
+          +picture("content/screens", "screen-03", "png", 590, 850, "mockup iphone", true)
+        .who-for__view-screen-landscape
+          +picture("content/screens", "screen-01", "png", 537, 828, "mockup screen", true)
+        .who-for__view-screen-portrait
+          +picture("content/screens", "screen-04", "png", 367, 418, "mockup screen", true)
+        .who-for__view-screen-portrait-piece-card
+          +picture("content/screens", "card", "png", 57, 183, "mockup screen", true)
+    .who-for__features
+

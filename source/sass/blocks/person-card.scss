@@ -1,0 +1,154 @@
+.person-card {
+  width: size(360px);
+  padding: size(20px);
+  border-radius: size(25px);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+
+  background-color: #ffffff;
+  box-shadow: 0px size(10px) size(40px) rgba(0, 0, 0, 0.08);
+
+  @include portrait {
+    flex-shrink: 0;
+
+    width: calc(298px / 375px * 100vw);
+    padding: calc(16px / 375px * 100vw);
+    border-radius: calc(21px / 375px * 100vw);
+    box-shadow: 0px calc(8px / 375px * 100vw) calc(33px / 375px * 100vw) rgba(0, 0, 0, 0.08);
+  }
+
+  &__head {
+    display: flex;
+    align-items: center;
+
+    margin-bottom: size(12px);
+
+    @include portrait {
+      margin-bottom: calc(10px / 375px * 100vw);
+    }
+  }
+
+  &__head-img {
+    width: size(64px);
+    height: size(64px);
+
+    @include portrait {
+      width: calc(53px / 375px * 100vw);
+      height: calc(53px / 375px * 100vw);
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+
+      object-fit: cover;
+    }
+  }
+
+  &__head-text {
+    padding: size(9px);
+
+    @include portrait {
+      padding: calc(9px / 375px * 100vw);
+    }
+  }
+
+  &__head-title {
+    margin: 0;
+    margin-bottom: size(4px);
+
+    font-size: size(20px);
+    line-height: size(24px);
+    letter-spacing: -0.01em;
+    color: #0A0A24;
+
+    @include portrait {
+      margin-bottom: calc(3px / 375px * 100vw);
+
+      font-size: calc(14px / 375px * 100vw);
+      line-height: calc(17px / 375px * 100vw);
+    }
+  }
+
+  &__head-description {
+    margin: 0;
+
+    font-size: size(14px);
+    line-height: size(17px);
+    letter-spacing: -0.01em;
+    color: #8A8A8A;
+
+    @include portrait {
+      font-size: calc(11px / 375px * 100vw);
+      line-height: calc(13px / 375px * 100vw);
+    }
+  }
+
+  &__tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: size(12px);
+
+    margin: 0;
+    margin-bottom: size(12px);
+
+    font-size: size(12px);
+    line-height: size(14px);
+    letter-spacing: -0.01em;
+    color: #000000;
+
+    @include portrait {
+      gap: calc(10px / 375px * 100vw);
+
+      margin-bottom: calc(10px / 375px * 100vw);
+
+      font-size: calc(11px / 375px * 100vw);
+      line-height: calc(13px / 375px * 100vw);
+    }
+  }
+
+  &__message {
+    margin: 0;
+    padding: size(14px) size(16px);
+    border-radius: size(12px);
+
+    font-size: size(14px);
+    line-height: size(17px);
+    letter-spacing: -0.01em;
+    color: #0A0A24;
+
+    background-color: #f1f1f2;
+
+    @include portrait {
+      padding: calc(11px / 375px * 100vw) calc(13px / 375px * 100vw);
+      border-radius: calc(12px / 375px * 100vw);
+
+      font-size: calc(11px / 375px * 100vw);
+      line-height: calc(13px / 375px * 100vw);
+    }
+  }
+}
+
+.person-card:nth-child(1),
+.person-card:nth-child(2),
+.person-card:nth-child(3) {
+  position: absolute;
+
+  @include portrait {
+    position: static;
+  }
+}
+
+.person-card:nth-child(1) {
+  top: size(181px);
+  left: size(-190px);
+}
+
+.person-card:nth-child(2) {
+  top: size(82px);
+  left: size(440px);
+}
+
+.person-card:nth-child(3) {
+  top: size(371px);
+  left: size(486px);
+}
