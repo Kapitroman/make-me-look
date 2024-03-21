@@ -1,0 +1,132 @@
+.advantages {
+  display: flex;
+  height: 100%;
+
+  @include portrait {
+    flex-direction: column;
+    height: auto;
+  }
+
+  &__check-wrapper {
+    width: 50%;
+    margin-top: auto;
+    margin-bottom: auto;
+
+    background-color: rgba(coral, 0.3);
+
+    @include portrait {
+      width: 100%;
+
+      margin: 0;
+    }
+  }
+
+  &__head {
+    width: size(650px);
+    margin-bottom: size(80px);
+  }
+
+  &__slogan {
+    margin: 0;
+    margin-bottom: size(12px);
+
+    font-size: size(22px);
+    line-height: size(26px);
+    letter-spacing: -0.01em;
+    color: #7B7B7B;
+  }
+
+  &__title {
+    margin: 0;
+
+    font-family: $ff-g-ui-medium;
+    font-size: size(48px);
+    line-height: 115%;
+    color: #000000;
+  }
+
+  &__ckeck-container {
+    width: size(650px);
+    padding: size(30px);
+    border-radius: size(40px);
+
+    background: #FFFFFF;
+    box-shadow: 0px size(10px) size(40px) rgba(0, 0, 0, 0.08);
+    backdrop-filter: blur(#{size(7.5px)});
+  }
+
+  &__ckeck-head {
+    display: flex;
+    gap: size(24px);
+
+    margin-bottom: size(30px);
+    padding: size(20px);
+    border-radius: size(20px);
+
+    font-size: size(28px);
+    line-height: size(34px);
+    letter-spacing: -0.01em;
+    color: #ffffff;
+
+    background-color: #000000;
+
+    p {
+      width: calc((100% - #{size(24px)}) / 2);
+      margin: 0;
+    }
+  }
+
+  &__ckeck-head-style {
+    color: #6F6F6F;
+  }
+
+  &__ckeck-body {
+    display: flex;
+    gap: size(24px);
+  }
+
+  &__ckeck-body-item {
+    display: flex;
+    align-items: center;
+    gap: size(12px);
+
+    margin: 0;
+
+    font-size: size(16px);
+    line-height: size(19px);
+    letter-spacing: -0.01em;
+
+    svg {
+      flex-shrink: 0;
+      width: size(38px);
+      height: size(38px);
+    }
+  }
+
+  &__ckeck-body-style {
+    display: flex;
+    flex-direction: column;
+    gap: size(15px);
+
+    .advantages__ckeck-body-item {
+      color: rbga(#000000, 0.6);
+    }
+  }
+
+  &__ckeck-body-al-style {
+    display: flex;
+    flex-direction: column;
+    gap: size(15px);
+  }
+
+
+  &__images {
+    width: 50%;
+
+    background-color: rgba(yellowgreen, 0.3);
+
+    @include portrait {
+      width: 100%;
+    }
+  }
+}
