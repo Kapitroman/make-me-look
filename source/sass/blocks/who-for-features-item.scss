@@ -1,0 +1,59 @@
+.who-for-features-item {
+  position: relative;
+
+  margin: 0;
+  padding: size(20px) size(24px);
+  border-radius: size(25px) size(25px) size(25px) size(12px);
+
+  font-size: size(16px);
+  line-height: size(19px);
+  letter-spacing: -0.01em;
+  color: #000000;
+
+  background-color: #FFFFFF;
+  box-shadow: 0px size(16px) size(24px) rgba(150, 158, 174, 0.05);
+
+  @include portrait {
+    padding: calc(10px / 375px * 100vw) calc(20px / 375px * 100vw);
+    border-radius: calc(21px / 375px * 100vw) calc(21px / 375px * 100vw) calc(21px / 375px * 100vw) calc(10px / 375px * 100vw);
+
+    font-size: calc(13px / 375px * 100vw);
+    line-height: calc(16px / 375px * 100vw);
+
+    box-shadow: 0px calc(13px / 375px * 100vw) calc(20px / 375px * 100vw) rgba(150, 158, 174, 0.05);
+  }
+
+  svg {
+    position: absolute;
+    top: size(-10px);
+    left: size(-14px);
+
+    width: size(30px);
+    height: size(30px);
+
+    @include portrait {
+      top: calc(-8px / 375px * 100vw);
+      left: calc(-12px / 375px * 100vw);
+
+      width: calc(25px / 375px * 100vw);
+      height: calc(25px / 375px * 100vw);
+    }
+  }
+}
+
+.who-for-features-item--right {
+  border-radius: size(25px) size(25px) size(12px) size(25px);
+
+  @include portrait {
+    border-radius: calc(21px / 375px * 100vw) calc(21px / 375px * 100vw) calc(10px / 375px * 100vw) calc(21px / 375px * 100vw);
+  }
+
+  svg {
+    left: auto;
+    right: size(-9px);
+
+    @include portrait {
+      right: calc(-7px / 375px * 100vw);
+    }
+  }
+}
