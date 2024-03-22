@@ -5172,6 +5172,8 @@ a[href].focus-visible:focus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-transform: translateX(-17.375rem);
+          transform: translateX(-17.375rem);
 }
 @media (orientation: portrait) {
   .al-assistant {
@@ -5179,10 +5181,13 @@ a[href].focus-visible:focus {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    margin-bottom: 16vw;
+    -webkit-transform: none;
+            transform: none;
   }
 }
 .al-assistant__features {
-  width: 30%;
+  width: 31%;
   margin-top: 3.125rem;
   background-color: rgba(0, 255, 255, 0.3);
 }
@@ -5327,13 +5332,244 @@ a[href].focus-visible:focus {
   }
 }
 .al-assistant__viewer {
-  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 69%;
+  margin-top: 5.0625rem;
   background-color: rgba(255, 99, 71, 0.3);
 }
 @media (orientation: portrait) {
   .al-assistant__viewer {
+    position: relative;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     width: 100%;
+    margin-top: 0;
   }
+}
+.al-assistant__viewer-title {
+  display: none;
+}
+@media (orientation: portrait) {
+  .al-assistant__viewer-title {
+    display: block;
+    width: 72vw;
+    margin: 0 auto;
+    margin-bottom: 11.2vw;
+    font-family: "GolosUIWebMedium", "Arial", sans-serif;
+    font-weight: 500;
+    font-size: 5.3333333333vw;
+    line-height: 105%;
+    text-align: center;
+    letter-spacing: 0.02em;
+  }
+}
+.al-assistant__viewer-picture-container {
+  position: relative;
+  aspect-ratio: 626/841;
+  height: 52.5625rem;
+  margin-right: 3%;
+  background-color: rgba(184, 134, 11, 0.3);
+}
+@media (orientation: portrait) {
+  .al-assistant__viewer-picture-container {
+    aspect-ratio: 375/417;
+    height: 111.2vw;
+    margin-right: 0;
+  }
+}
+.al-assistant__viewer-picture-container img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.al-assistant__viewer-stars {
+  position: absolute;
+  top: 5.875rem;
+  left: 3.5rem;
+  width: 29.75rem;
+  height: 29.3125rem;
+  background-color: rgba(154, 205, 50, 0.3);
+}
+@media (orientation: portrait) {
+  .al-assistant__viewer-stars {
+    top: 8.8vw;
+    left: 0;
+    width: 55.4666666667vw;
+    height: 69.6vw;
+  }
+}
+.al-assistant__viewer-stars svg {
+  display: block;
+  width: 29.75rem;
+  height: 29.3125rem;
+}
+@media (orientation: portrait) {
+  .al-assistant__viewer-stars svg {
+    width: 55.4666666667vw;
+    height: 69.6vw;
+  }
+}
+.al-assistant__viewer-ellipse {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 39.125rem;
+  height: 8.5625rem;
+}
+@media (orientation: portrait) {
+  .al-assistant__viewer-ellipse {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    width: 87.2vw;
+    height: 19.2vw;
+  }
+}
+.al-assistant__model {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-49%);
+          transform: translateX(-49%);
+  width: 17rem;
+  height: 48.6875rem;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+@media (orientation: portrait) {
+  .al-assistant__model {
+    left: 40%;
+    width: 36vw;
+    height: 102.6666666667vw;
+  }
+}
+.al-assistant__model.is-active {
+  opacity: 1;
+}
+.al-assistant__viewer-controls-container {
+  position: relative;
+  aspect-ratio: 528/604;
+  height: 37.75rem;
+  margin-top: 2.3125rem;
+  background-color: rgba(255, 20, 147, 0.3);
+}
+@media (orientation: portrait) {
+  .al-assistant__viewer-controls-container {
+    position: absolute;
+    top: 22.6666666667vw;
+    right: 6.6666666667vw;
+    aspect-ratio: 120/417;
+    height: 111.2vw;
+    margin-top: 0;
+  }
+}
+.al-assistant__viewer-title-landscape {
+  margin: 0;
+  width: 23.125rem;
+  font-size: 2rem;
+  line-height: 2.375rem;
+  letter-spacing: -0.01em;
+}
+@media (orientation: portrait) {
+  .al-assistant__viewer-title-landscape {
+    display: none;
+  }
+}
+.al-assistant__viewer-buttons-container {
+  position: absolute;
+  top: 2.6875rem;
+  left: 13.75rem;
+  aspect-ratio: 307/561;
+  height: 35.0625rem;
+  background-color: rgba(0, 255, 255, 0.3);
+}
+@media (orientation: portrait) {
+  .al-assistant__viewer-buttons-container {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 255, 0.3);
+  }
+}
+.al-assistant__viewer-button {
+  position: absolute;
+  width: 8.75rem;
+  height: 8.75rem;
+  border-radius: 1.5625rem;
+  border: 1px solid transparent;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  background-color: #ffffff;
+  -webkit-box-shadow: 0px 1rem 1.5rem rgba(150, 158, 174, 0.1);
+          box-shadow: 0px 1rem 1.5rem rgba(150, 158, 174, 0.1);
+  overflow: hidden;
+  -webkit-transition: border-color 0.3s ease;
+  transition: border-color 0.3s ease;
+}
+@media (orientation: portrait) {
+  .al-assistant__viewer-button {
+    width: 16.2666666667vw;
+    height: 16.2666666667vw;
+    border-radius: 2.9333333333vw;
+    -webkit-box-shadow: 0px 1.8666666667vw 2.9333333333vw rgba(150, 158, 174, 0.1);
+            box-shadow: 0px 1.8666666667vw 2.9333333333vw rgba(150, 158, 174, 0.1);
+  }
+}
+.al-assistant__viewer-button img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.al-assistant__viewer-button--02 {
+  top: 2.5rem;
+  right: 8.5rem;
+}
+@media (orientation: portrait) {
+  .al-assistant__viewer-button--02 {
+    top: 5.3333333333vw;
+    right: 10.6666666667vw;
+  }
+}
+.al-assistant__viewer-button--01 {
+  top: 9.5625rem;
+  right: 1.875rem;
+}
+@media (orientation: portrait) {
+  .al-assistant__viewer-button--01 {
+    top: 26.6666666667vw;
+    right: 2.6666666667vw;
+  }
+}
+.al-assistant__viewer-button--03 {
+  top: 16.625rem;
+  right: 8.5rem;
+}
+@media (orientation: portrait) {
+  .al-assistant__viewer-button--03 {
+    top: 48vw;
+    right: 10.6666666667vw;
+  }
+}
+.al-assistant__viewer-button--04 {
+  top: 23.6875rem;
+  right: 1.875rem;
+}
+@media (orientation: portrait) {
+  .al-assistant__viewer-button--04 {
+    top: 69.3333333333vw;
+    right: 2.6666666667vw;
+  }
+}
+.al-assistant__viewer-button.is-active {
+  border-color: #000000;
 }
 
 /* @mixin hover-focus {

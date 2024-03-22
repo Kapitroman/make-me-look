@@ -26,3 +26,30 @@ mixin al-assistant()
             +icon("time", 64, 64).al-assistant__features-icon
           p.al-assistant__features-item-text Сэкономит до 10 часов в неделю
     .al-assistant__viewer
+      p.al-assistant__viewer-title Примеряй свои образы одним касанием
+      .al-assistant__viewer-picture-container
+        .al-assistant__viewer-stars
+          img(src="./img/svg/stars-al-assistan.svg", width="476", height="469", alt="звезды", loading="lazy")
+        .al-assistant__viewer-ellipse
+          img(src="./img/svg/ellipse.svg", width="626", height="137", alt="тень от модели", loading="lazy")
+        .al-assistant__model.al-assistant__model--02
+          +picture("content/al-assistant", "model-02", "png", 272, 779, "фото модели", true)
+        .al-assistant__model.al-assistant__model--01.is-active
+          +picture("content/al-assistant", "model-01", "png", 272, 779, "фото модели", true)
+        .al-assistant__model.al-assistant__model--03
+          +picture("content/al-assistant", "model-03", "png", 272, 779, "фото модели", true)
+        .al-assistant__model.al-assistant__model--04
+          +picture("content/al-assistant", "model-04", "png", 272, 779, "фото модели", true)
+      .al-assistant__viewer-controls-container
+        p.al-assistant__viewer-title-landscape Примеряй свои образы одним касанием
+        .al-assistant__viewer-radio-container
+        .al-assistant__viewer-links-container
+        .al-assistant__viewer-buttons-container
+          a(href="#" data-index=0).al-assistant__viewer-button.al-assistant__viewer-button--02
+            +picture("content/al-assistant", "clothes-02", "png", 140, 140, "фото предмета одежды", true)
+          a(href="#" data-index=1).al-assistant__viewer-button.al-assistant__viewer-button--01.is-active
+            +picture("content/al-assistant", "clothes-01", "png", 140, 140, "фото предмета одежды", true)
+          a(href="#" data-index=2).al-assistant__viewer-button.al-assistant__viewer-button--03
+            +picture("content/al-assistant", "clothes-03", "png", 140, 140, "фото предмета одежды", true)
+          a(href="#" data-index=3).al-assistant__viewer-button.al-assistant__viewer-button--04
+            +picture("content/al-assistant", "clothes-04", "png", 140, 140, "фото предмета одежды", true)

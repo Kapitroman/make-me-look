@@ -1,12 +1,17 @@
 .al-assistant {
   display: flex;
 
+  transform: translateX(#{size(-278px)});
+
   @include portrait {
     flex-direction: column;
+    margin-bottom: calc(60px / 375px * 100vw);
+
+    transform: none;
   }
 
   &__features {
-    width: 30%;
+    width: 31%;
     margin-top: size(50px);
 
     background-color:rgba(cyan, 0.3);
@@ -143,12 +148,268 @@
   }
 
   &__viewer {
-    width: 70%;
+    display: flex;
+
+    width: 69%;
+    margin-top: size(81px);
 
     background-color: rgba(tomato, 0.3);
 
     @include portrait {
+      position: relative;
+
+      flex-direction: column;
       width: 100%;
+      margin-top: 0;
     }
+  }
+
+  &__viewer-title {
+    display: none;
+
+    @include portrait {
+      display: block;
+
+      width: calc(270px / 375px * 100vw);
+      margin: 0 auto;
+      margin-bottom: calc(42px / 375px * 100vw);
+
+      font-family: $ff-g-ui-medium;
+      font-weight: 500;
+      font-size: calc(20px / 375px * 100vw);
+      line-height: 105%;
+      text-align: center;
+      letter-spacing: 0.02em;
+    }
+  }
+
+  &__viewer-picture-container {
+    position: relative;
+
+    aspect-ratio: 626 / 841;
+    height: size(841px);
+    //margin-right: size(60px);
+    margin-right: 3%;
+
+    background-color: rgba(darkgoldenrod, 0.3);
+
+    @include portrait {
+      aspect-ratio: 375 / 417;
+      height: calc(417px / 375px * 100vw);
+      margin-right: 0;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+
+      object-fit: cover;
+    }
+  }
+
+  &__viewer-stars {
+    position: absolute;
+    top: size(94px);
+    left: size(56px);
+
+    width: size(476px);
+    height: size(469px);
+
+    background-color: rgba(yellowgreen, 0.3);
+
+    @include portrait {
+      top: calc(33px / 375px * 100vw);
+      left: 0;
+
+      width: calc(208px / 375px * 100vw);
+      height: calc(261px / 375px * 100vw);
+    }
+
+    svg {
+      display: block;
+
+      width: size(476px);
+      height: size(469px);
+
+      @include portrait {
+        width: calc(208px / 375px * 100vw);
+        height: calc(261px / 375px * 100vw);
+      }
+    }
+  }
+
+  &__viewer-ellipse {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    width: size(626px);
+    height: size(137px);
+
+    @include portrait {
+      left: 50%;
+      transform: translateX(-50%);
+
+      width: calc(327px / 375px * 100vw);
+      height: calc(72px / 375px * 100vw);
+    }
+  }
+
+  &__model {
+    position: absolute;
+    top: 0;
+    left: 50%;
+
+    transform: translateX(-49%);
+
+    width: size(272px);
+    height: size(779px);
+
+    opacity: 0;
+
+    transition: opacity $trans-default;
+
+    @include portrait {
+      left: 40%;
+      width: calc(135px / 375px * 100vw);
+      height: calc(385px / 375px * 100vw);
+    }
+  }
+
+  &__model.is-active {
+    opacity: 1;
+  }
+
+  &__viewer-controls-container {
+    position: relative;
+
+    aspect-ratio: 528 / 604;
+    height: size(604px);
+    //margin-right: size(390px);
+    //margin-left: auto;
+    margin-top: size(37px);
+
+    background-color: rgba(deeppink, 0.3);
+
+    @include portrait {
+      position: absolute;
+      top: calc(85px / 375px * 100vw);
+      right: calc(25px / 375px * 100vw);
+
+      aspect-ratio: 120 / 417;
+      height: calc(417px / 375px * 100vw);
+      margin-top: 0;
+    }
+  }
+
+  &__viewer-title-landscape {
+    margin: 0;
+    width: size(370px);
+
+    font-size: size(32px);
+    line-height: size(38px);
+    letter-spacing: -0.01em;
+
+    @include portrait {
+      display: none;
+    }
+  }
+
+  &__viewer-buttons-container {
+    position: absolute;
+    top: size(43px);
+    left: size(220px);
+
+    aspect-ratio: 307 / 561;
+    height: size(561px);
+
+    background-color: rgba(cyan, 0.3);
+
+    @include portrait {
+      top: 0;
+      left: 0;
+
+      width: 100%;
+      height: 100%;
+
+      background-color: rgba(blue, 0.3);
+    }
+  }
+
+  &__viewer-button {
+    position: absolute;
+
+    width: size(140px);
+    height: size(140px);
+    border-radius: size(25px);
+    border: 1px solid transparent;
+
+    transform: rotate(45deg);
+
+    background-color: #ffffff;
+    box-shadow: 0px size(16px) size(24px) rgba(150, 158, 174, 0.1);
+
+    overflow: hidden;
+
+    transition: border-color $trans-default;
+
+    @include portrait {
+      width: calc(61px / 375px * 100vw);
+      height: calc(61px / 375px * 100vw);
+      border-radius: calc(11px / 375px * 100vw);
+
+      box-shadow: 0px calc(7px / 375px * 100vw) calc(11px / 375px * 100vw) rgba(150, 158, 174, 0.1);
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+
+      object-fit: cover;
+    }
+  }
+
+  &__viewer-button--02 {
+    top: size(40px);
+    right: size(136px);
+
+    @include portrait {
+      top: calc(20px / 375px * 100vw);
+      right: calc(40px / 375px * 100vw);
+    }
+  }
+
+  &__viewer-button--01 {
+    top: size(153px);
+    right: size(30px);
+
+    @include portrait {
+      top: calc(100px / 375px * 100vw);
+      right: calc(10px / 375px * 100vw);
+    }
+  }
+
+  &__viewer-button--03 {
+    top: size(266px);
+    right: size(136px);
+
+    @include portrait {
+      top: calc(180px / 375px * 100vw);
+      right: calc(40px / 375px * 100vw);
+    }
+  }
+
+  &__viewer-button--04 {
+    top: size(379px);
+    right: size(30px);
+
+    @include portrait {
+      top: calc(260px / 375px * 100vw);
+      right: calc(10px / 375px * 100vw);
+    }
+  }
+
+  &__viewer-button.is-active {
+    border-color: #000000;
   }
 }

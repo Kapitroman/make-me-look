@@ -10,6 +10,7 @@ import {Burger} from './modules/burger';
 //import {moveToSection} from './modules/move-to-section';
 import {scrollSections} from './modules/scroll-sections';
 import {initClothesModelsSlider} from './modules/init-clothes-models-slider';
+import {chooseLook} from './modules/choose-look';
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -43,6 +44,7 @@ window.addEventListener('DOMContentLoaded', () => {
     //init();
     scrollSections();
     initClothesModelsSlider();
+    chooseLook();
   });
 });
 
