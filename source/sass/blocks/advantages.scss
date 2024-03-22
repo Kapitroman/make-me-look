@@ -2,9 +2,13 @@
   display: flex;
   height: 100%;
 
+  transform: translateX(#{size(-180px)});
+
   @include portrait {
     flex-direction: column;
     height: auto;
+
+    transform: none;
   }
 
   &__check-wrapper {
@@ -15,16 +19,24 @@
     background-color: rgba(coral, 0.3);
 
     @include portrait {
+      display: flex;
+      flex-direction: column;
+
       width: 100%;
 
       margin: 0;
-      margin-bottom: (40px / 375px * 100vw);
+      margin-bottom: calc(40px / 375px * 100vw);
     }
   }
 
   &__head {
     width: size(650px);
     margin-bottom: size(80px);
+
+    @include portrait {
+      width: 100%;
+      margin-bottom: calc(40px / 375px * 100vw);
+    }
   }
 
   &__slogan {
@@ -35,6 +47,14 @@
     line-height: size(26px);
     letter-spacing: -0.01em;
     color: #7B7B7B;
+
+    @include portrait {
+      margin-bottom: calc(5px / 375px * 100vw);
+
+      font-size: calc(14px / 375px * 100vw);
+      line-height: calc(17px / 375px * 100vw);
+      text-align: center;
+    }
   }
 
   &__title {
@@ -44,6 +64,12 @@
     font-size: size(48px);
     line-height: 115%;
     color: #000000;
+
+    @include portrait {
+      font-size: size(24px);
+      line-height: 105%;
+      text-align: center;
+    }
   }
 
   &__ckeck-container {
@@ -54,6 +80,16 @@
     background: #FFFFFF;
     box-shadow: 0px size(10px) size(40px) rgba(0, 0, 0, 0.08);
     backdrop-filter: blur(#{size(7.5px)});
+
+    @include portrait {
+      width: calc(350px / 375px * 100vw);
+      margin: 0 auto;
+      padding: calc(16px / 375px * 100vw);
+      border-radius: calc(20px / 375px * 100vw);
+
+      box-shadow: 0px calc(5px / 375px * 100vw) calc(20px / 375px * 100vw) rgba(0, 0, 0, 0.08);
+      backdrop-filter: blur(#{size(4px)});
+    }
   }
 
   &__ckeck-head {
@@ -71,9 +107,24 @@
 
     background-color: #000000;
 
+    @include portrait {
+      gap: calc(12px / 375px * 100vw);
+
+      margin-bottom: calc(16px / 375px * 100vw);
+      padding: calc(10px / 375px * 100vw);
+      border-radius: calc(10px / 375px * 100vw);
+
+      font-size: calc(16px / 375px * 100vw);
+      line-height: calc(19px / 375px * 100vw);
+    }
+
     p {
       width: calc((100% - #{size(24px)}) / 2);
       margin: 0;
+
+      @include portrait {
+        width: calc((100% - calc(12px / 375px * 100vw)) / 2);
+      }
     }
   }
 
@@ -84,6 +135,10 @@
   &__ckeck-body {
     display: flex;
     gap: size(24px);
+
+    @include portrait {
+      gap: calc(12px / 375px * 100vw);
+    }
   }
 
   &__ckeck-body-item {
@@ -97,10 +152,23 @@
     line-height: size(19px);
     letter-spacing: -0.01em;
 
+    @include portrait {
+      gap: calc(6px / 375px * 100vw);
+
+      font-size: calc(14px / 375px * 100vw);
+      line-height: calc(17px / 375px * 100vw);
+    }
+
     svg {
       flex-shrink: 0;
+
       width: size(38px);
       height: size(38px);
+
+      @include portrait {
+        width: calc(19px / 375px * 100vw);
+        height: calc(19px / 375px * 100vw);
+      }
     }
   }
 
@@ -109,8 +177,16 @@
     flex-direction: column;
     gap: size(15px);
 
+    width: calc((100% - #{size(24px)}) / 2);
+
     .advantages__ckeck-body-item {
-      color: rbga(#000000, 0.6);
+      color: rgba(#000000, 0.6);
+    }
+
+    @include portrait {
+      gap: calc(8px / 375px * 100vw);
+
+      width: calc((100% - calc(12px / 375px * 100vw)) / 2);
     }
   }
 
@@ -118,6 +194,14 @@
     display: flex;
     flex-direction: column;
     gap: size(15px);
+
+    width: calc((100% - #{size(15px)}) / 2);
+
+    @include portrait {
+      gap: calc(8px / 375px * 100vw);
+
+      width: calc((100% - calc(12px / 375px * 100vw)) / 2);
+    }
   }
 
 
@@ -152,7 +236,7 @@
       //height: calc(719px / 375px * 100vw);
       height: calc(700px / 375px * 100vw);
 
-      transform: translate(#{size(-25px)}, #{size(-15px)});
+      transform: translate(#{size(-25px)}, #{size(-11px)});
     }
 
     img {
