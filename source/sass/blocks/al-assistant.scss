@@ -1,0 +1,154 @@
+.al-assistant {
+  display: flex;
+
+  @include portrait {
+    flex-direction: column;
+  }
+
+  &__features {
+    width: 30%;
+    margin-top: size(50px);
+
+    background-color:rgba(cyan, 0.3);
+
+    @include portrait {
+      width: 100%;
+      margin-top: 0;
+      margin-bottom: calc(60px / 375px * 100vw);
+    }
+  }
+
+  &__head {
+    width: size(593px);
+    margin-bottom: size(72px);
+
+    @include portrait {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      width: 100%;
+      margin-bottom: calc(30px / 375px * 100vw);
+    }
+  }
+
+  &__slogan {
+    margin: 0;
+    margin-bottom: size(12px);
+
+    font-size: size(22px);
+    line-height: size(26px);
+    letter-spacing: -0.01em;
+    color: #7B7B7B;
+
+    @include portrait {
+      margin-bottom: calc(5px / 375px * 100vw);
+
+      font-size: calc(14px / 375px * 100vw);
+      line-height: calc(17px / 375px * 100vw);
+      text-align: center;
+    }
+  }
+
+  &__title {
+    margin: 0;
+
+    font-family: $ff-g-ui-medium;
+    font-size: size(48px);
+    line-height: 115%;
+    color: #000000;
+
+    @include portrait {
+      width: calc(325px / 375px * 100vw);
+
+      font-size: size(24px);
+      line-height: 105%;
+      text-align: center;
+    }
+  }
+
+  &__features-container {
+    display: flex;
+    flex-direction: column;
+    gap: size(32px);
+
+    @include portrait {
+      gap: calc(24px / 375px * 100vw);
+      width: calc(328px / 375px * 100vw);
+      margin: 0 auto;
+    }
+  }
+
+  &__features-item {
+    display: flex;
+    gap: size(24px);
+    align-items: center;
+
+    width: size(448px);
+
+    @include portrait {
+      gap: calc(12px / 375px * 100vw);
+
+      width: calc(327px / 375px * 100vw);
+    }
+  }
+
+  &__features-item:nth-child(even) {
+    margin-left: size(32px);
+
+    @include portrait {
+      margin-left: calc(32px / 375px * 100vw);
+    }
+  }
+
+  &__features-item-icons {
+    display: flex;
+  }
+
+  &__features-icon {
+    width: size(64px);
+    height: size(64px);
+
+    @include portrait {
+      width: calc(40px / 375px * 100vw);
+      height: calc(40px / 375px * 100vw);
+    }
+  }
+
+  &__features-background {
+    width: size(29px);
+    height: size(14px);
+    margin-top: auto;
+    padding-right: size(4px);
+
+    @include portrait {
+      width: calc(29px / 375px * 100vw);
+      height: calc(14px / 375px * 100vw);
+      padding-left: calc(4px / 375px * 100vw);
+    }
+  }
+
+  &__features-item-text {
+    margin: 0;
+
+    font-size: size(20px);
+    line-height: size(24px);
+    letter-spacing: -0.01em;
+    color: #0A0A24;
+
+    @include portrait {
+      font-size: calc(16px / 375px * 100vw);
+      line-height: calc(19px / 375px * 100vw);
+    }
+  }
+
+  &__viewer {
+    width: 70%;
+
+    background-color: rgba(tomato, 0.3);
+
+    @include portrait {
+      width: 100%;
+    }
+  }
+}

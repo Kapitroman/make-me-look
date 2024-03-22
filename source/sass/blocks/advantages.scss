@@ -7,6 +7,7 @@
   @include portrait {
     flex-direction: column;
     height: auto;
+    margin-bottom: calc(60px / 375px * 100vw);
 
     transform: none;
   }

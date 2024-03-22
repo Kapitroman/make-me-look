@@ -4895,6 +4895,7 @@ a[href].focus-visible:focus {
         -ms-flex-direction: column;
             flex-direction: column;
     height: auto;
+    margin-bottom: 16vw;
     -webkit-transform: none;
             transform: none;
   }
@@ -5164,6 +5165,174 @@ a[href].focus-visible:focus {
 @media (orientation: portrait) {
   .advantages__blur {
     display: block;
+  }
+}
+
+.al-assistant {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+@media (orientation: portrait) {
+  .al-assistant {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+.al-assistant__features {
+  width: 30%;
+  margin-top: 3.125rem;
+  background-color: rgba(0, 255, 255, 0.3);
+}
+@media (orientation: portrait) {
+  .al-assistant__features {
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 16vw;
+  }
+}
+.al-assistant__head {
+  width: 37.0625rem;
+  margin-bottom: 4.5rem;
+}
+@media (orientation: portrait) {
+  .al-assistant__head {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    margin-bottom: 8vw;
+  }
+}
+.al-assistant__slogan {
+  margin: 0;
+  margin-bottom: 0.75rem;
+  font-size: 1.375rem;
+  line-height: 1.625rem;
+  letter-spacing: -0.01em;
+  color: #7B7B7B;
+}
+@media (orientation: portrait) {
+  .al-assistant__slogan {
+    margin-bottom: 1.3333333333vw;
+    font-size: 3.7333333333vw;
+    line-height: 4.5333333333vw;
+    text-align: center;
+  }
+}
+.al-assistant__title {
+  margin: 0;
+  font-family: "GolosUIWebMedium", "Arial", sans-serif;
+  font-size: 3rem;
+  line-height: 115%;
+  color: #000000;
+}
+@media (orientation: portrait) {
+  .al-assistant__title {
+    width: 86.6666666667vw;
+    font-size: 1.5rem;
+    line-height: 105%;
+    text-align: center;
+  }
+}
+.al-assistant__features-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2rem;
+}
+@media (orientation: portrait) {
+  .al-assistant__features-container {
+    gap: 6.4vw;
+    width: 87.4666666667vw;
+    margin: 0 auto;
+  }
+}
+.al-assistant__features-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1.5rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 28rem;
+}
+@media (orientation: portrait) {
+  .al-assistant__features-item {
+    gap: 3.2vw;
+    width: 87.2vw;
+  }
+}
+.al-assistant__features-item:nth-child(even) {
+  margin-left: 2rem;
+}
+@media (orientation: portrait) {
+  .al-assistant__features-item:nth-child(even) {
+    margin-left: 8.5333333333vw;
+  }
+}
+.al-assistant__features-item-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.al-assistant__features-icon {
+  width: 4rem;
+  height: 4rem;
+}
+@media (orientation: portrait) {
+  .al-assistant__features-icon {
+    width: 10.6666666667vw;
+    height: 10.6666666667vw;
+  }
+}
+.al-assistant__features-background {
+  width: 1.8125rem;
+  height: 0.875rem;
+  margin-top: auto;
+  padding-right: 0.25rem;
+}
+@media (orientation: portrait) {
+  .al-assistant__features-background {
+    width: 7.7333333333vw;
+    height: 3.7333333333vw;
+    padding-left: 1.0666666667vw;
+  }
+}
+.al-assistant__features-item-text {
+  margin: 0;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  letter-spacing: -0.01em;
+  color: #0A0A24;
+}
+@media (orientation: portrait) {
+  .al-assistant__features-item-text {
+    font-size: 4.2666666667vw;
+    line-height: 5.0666666667vw;
+  }
+}
+.al-assistant__viewer {
+  width: 70%;
+  background-color: rgba(255, 99, 71, 0.3);
+}
+@media (orientation: portrait) {
+  .al-assistant__viewer {
+    width: 100%;
   }
 }
 
