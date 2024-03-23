@@ -1,0 +1,130 @@
+.contacts {
+  display: flex;
+  height: 100%;
+
+  @include portrait {
+    flex-direction: column;
+    height: auto;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: size(30px);
+
+    width: 60%; /////
+    margin-top: size(200px);
+    padding-left: size(100px);
+
+    background-color: rgba(crimson, 0.3);
+
+    @include portrait {
+      gap: calc(20px / 375px * 100vw);
+
+      width: 100%;
+      margin-top: 0;
+      padding: 0 calc(24px / 375px * 100vw);
+    }
+  }
+
+  &__title {
+    width: size(621px);
+    margin: 0;
+
+    font-size: size(32px);
+    line-height: size(38px);
+    letter-spacing: -0.01em;
+
+    @include portrait {
+      width: 100%;
+
+      font-size: calc(24px / 375px * 100vw);
+      line-height: calc(29px / 375px * 100vw);
+    }
+  }
+
+  &__name {
+    margin: 0;
+    margin-bottom: size(12px);
+
+    font-size: size(22px);
+    line-height: size(26px);
+    letter-spacing: -0.01em;
+
+    color: #7B7B7B;
+
+    @include portrait {
+      margin-bottom: calc(5px / 375px * 100vw);
+
+      font-size: calc(13px / 375px * 100vw);
+      line-height: calc(16px / 375px * 100vw);
+    }
+  }
+
+  &__value {
+    margin: 0;
+
+    font-size: size(48px);
+    line-height: 115%;
+
+    @include portrait {
+      font-size: calc(21px / 375px * 100vw);
+      line-height: 105%;
+    }
+  }
+
+  &__social-list {
+
+    display: flex;
+    gap: size(20px);
+    align-items: center;
+    flex-wrap: wrap;
+
+    margin: 0;
+    padding-left: 0;
+
+    list-style: none;
+
+    @include portrait {
+      gap: calc(16px / 375px * 100vw)
+    }
+
+    a {
+      display: block;
+      width: size(50px);
+      height: size(50px);
+
+      @include portrait {
+        width: calc(32px / 375px * 100vw);
+        height: calc(32px / 375px * 100vw);
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+
+        object-fit: cover;
+      }
+    }
+  }
+  /*
+  &__footer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 20;
+
+    width: size(900px); /////
+
+    height: 100%;
+
+    background-color: rgba(chartreuse, 0.3);
+
+    @include portrait {
+      position: static;
+
+      width: 100%;
+    }
+  }
+  */
+}

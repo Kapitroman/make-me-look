@@ -45,6 +45,7 @@ const scrollSections = () => {
 
   const addHeaderClass  = () => {
     const header = document.querySelector('[data-header]');
+    const footer = document.querySelector('.footer');
 
     const addShadowHandler = () => {
       if (document.documentElement.scrollTop > header.offsetHeight) {
@@ -59,6 +60,11 @@ const scrollSections = () => {
         header.classList.add('header--last-section');
       } else {
         header.classList.remove('header--last-section');
+      }
+      if (document.documentElement.scrollTop > window.innerWidth * 6.5) {
+        footer.classList.add('footer--last-section');
+      } else {
+        footer.classList.remove('footer--last-section');
       }
     };
 
