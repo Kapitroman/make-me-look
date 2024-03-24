@@ -1,22 +1,28 @@
 .contacts {
+  position: relative;
+
   display: flex;
+
   height: 100%;
 
   @include portrait {
+    z-index: 3;
     flex-direction: column;
+
     height: auto;
+    padding-bottom: calc(462px / 375px * 100vw);
   }
 
   &__wrapper {
+    position: relative;
+    z-index: 2;
+
     display: flex;
     flex-direction: column;
     gap: size(30px);
 
-    width: 60%; /////
     margin-top: size(200px);
     padding-left: size(100px);
-
-    background-color: rgba(crimson, 0.3);
 
     @include portrait {
       gap: calc(20px / 375px * 100vw);
@@ -107,23 +113,40 @@
       }
     }
   }
-  /*
-  &__footer {
+
+  &__star-image {
     position: absolute;
-    top: 0;
-    right: 0;
-    z-index: 20;
+    bottom: 0;
+    left: size(100px);
 
-    width: size(900px); /////
-
-    height: 100%;
-
-    background-color: rgba(chartreuse, 0.3);
+    width: size(980px);
+    height: size(548px);
 
     @include portrait {
-      position: static;
+      display: none;
+    }
+  }
+  /*
+  &__image {
+    position: absolute;
+    //left: size(723px);
+    //right: size(1119px);
+    right: 35%;
+    bottom: 0;
 
+    width: size(604px);
+    height: size(932px);
+    //width: 32%;
+    //height: 48%;
+    //aspect-ratio: 604 / 932;
+
+    img {
       width: 100%;
+      height: 100%;
+
+      mix-blend-mode: multiply;
+
+      object-fit: cover;
     }
   }
   */

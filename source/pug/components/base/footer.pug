@@ -1,3 +1,8 @@
 mixin footer(footerMods)
   footer.footer(class=footerMods)
-
+    .footer__image
+      +picture("content/footer", "model", "png", 604, 932, "фото модель", true)
+    svg(width="786" height="1081" viewBox="0 0 786 1081" preserveAspectRatio="none" fill="none" xmlns="http://www.w3.org/2000/svg").footer__background-landscape
+      path(fill-rule="evenodd" clip-rule="evenodd" d="M0.838867 1080.72C88.4307 930.317 140.338 743.339 140.338 540.719C140.338 338.098 88.4308 151.121 0.838882 0.71875H786V1080.72H0.838867Z" fill="black")
+    svg(width="375" height="412" viewBox="0 0 375 412" preserveAspectRatio="none" fill="none" xmlns="http://www.w3.org/2000/svg").footer__background-portrait
+      path(fill-rule="evenodd" clip-rule="evenodd" d="M3.05176e-05 0.0717761C56.7626 15.258 120.352 23.7635 187.5 23.7635C254.648 23.7635 318.237 15.258 375 0.0717773L375 412.281L1.24993e-05 412.281L3.05176e-05 0.0717761Z" fill="black")

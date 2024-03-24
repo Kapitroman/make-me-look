@@ -6,19 +6,105 @@
   right: 0;
   z-index: 20;
 
-  width: size(900px);
+  //width: size(785px);
+  width: 53%;
 
   height: 100%;
+  background-color: #f2f2f2;
 
-  background-color: rgba(chartreuse, 0.3);
+  //border-top: 1px solid #000000;
+  //box-shadow: 1px solid #000000;
+
+  //background-color: #000000;
+  //clip-path: path("M0.838867 1080.72C88.4307 930.317 140.338 743.339 140.338 540.719C140.338 338.098 88.4308 151.121 0.838882 0.71875H786V1080.72H0.838867Z");
+  //clip-path: url("../img/svg/clip-path.svg#footer");
+  //clip-path: url("../#footer");
 
   @include portrait {
     display: block;
 
-    position: static;
+    position: absolute;
+    top: initial;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
 
     width: 100%;
-    height: 300px;
+    padding-top: calc(279px / 375px * 100vw);
+    height: calc((412px + 279px)/ 375px * 100vw);
+    //aspect-ratio: 375 / 412;
+    overflow: hidden;
+  }
+
+  &__image {
+    position: absolute;
+    //left: size(723px);
+    //right: size(1119px);
+    left: size(15px);
+    bottom: 0;
+
+    width: size(604px);
+    height: size(932px);
+    //width: 32%;
+    //height: 48%;
+    //aspect-ratio: 604 / 932;
+    transform: rotate(-16deg);
+    mix-blend-mode: multiply;
+
+    @include portrait {
+      left: calc(119px / 375px * 100vw);
+      bottom: calc(-64px / 375px * 100vw);
+
+      width: calc(490px / 375px * 100vw);
+      height:calc(756px / 375px * 100vw);
+
+      transform: none;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+
+      mix-blend-mode: multiply;
+
+      object-fit: cover;
+    }
+  }
+
+  &__background-landscape {
+    //display: block;
+    position: absolute;
+    //top: 50%;
+    top: -1px;
+    right: 0;
+    //left: 0;
+
+    width: 75%;
+    height: calc(100% + 1px);
+
+    //transform: translateY(-50%);
+    //background-color: red;
+
+    @include portrait {
+      display: none;////
+    }
+  }
+}
+
+.footer__background-portrait {
+  display: none;
+
+  @include portrait {
+    display: block;
+
+    position: absolute;
+    left: 0;
+    top: initial;
+    bottom: 0;
+
+    width: 100%;
+    height: calc(412px / 375px * 100vw);
   }
 }
 
@@ -27,7 +113,8 @@
 
   position: fixed;
 
+
   @include portrait {
-    position: static;
+    position: absolute;
   }
 }
