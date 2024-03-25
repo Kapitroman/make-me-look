@@ -6,3 +6,23 @@ mixin footer(footerMods)
       path(fill-rule="evenodd" clip-rule="evenodd" d="M0.838867 1080.72C88.4307 930.317 140.338 743.339 140.338 540.719C140.338 338.098 88.4308 151.121 0.838882 0.71875H786V1080.72H0.838867Z" fill="black")
     svg(width="375" height="412" viewBox="0 0 375 412" preserveAspectRatio="none" fill="none" xmlns="http://www.w3.org/2000/svg").footer__background-portrait
       path(fill-rule="evenodd" clip-rule="evenodd" d="M3.05176e-05 0.0717761C56.7626 15.258 120.352 23.7635 187.5 23.7635C254.648 23.7635 318.237 15.258 375 0.0717773L375 412.281L1.24993e-05 412.281L3.05176e-05 0.0717761Z" fill="black")
+    .footer__container
+      ul.footer__navigator
+        li.footer__navigator-item
+          a(href="#section3").footer__navigator-link Возможности
+        li.footer__navigator-item
+          a(href="#section4").footer__navigator-link Для кого
+        li.footer__navigator-item
+          a(href="#section5").footer__navigator-link Преимущества
+        li.footer__navigator-item
+          a(href="#").footer__navigator-link Скачать
+      .footer__app-store
+        p.footer__app-store-text Скачать наше приложение
+        a(href="#").footer__app-store-link
+          img(src="./img/svg/app-store.svg", width="247", height="72", alt="ссылка на приложение в app-store", loading="lazy")
+      .footer__policy-wrapper
+        a(href="#").footer__policy-link Конфиденциальность
+        a(href="#").footer__policy-link Условия использования
+      .footer__app-info
+        .footer__app-info-label MakeMeLook — твой личный виртуальный AI-стилист
+        .footer__app-info-copyright @2023  MakeMeLook. Все права защищены

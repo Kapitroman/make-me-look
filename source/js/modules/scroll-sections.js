@@ -29,8 +29,6 @@ const scrollSections = () => {
 
   const moveToSection = () => {
     Array.from(document.querySelectorAll('.header__link')).forEach((item, index) => {
-      console.log(item);
-
       item.addEventListener('click', (evt) => {
         evt.defaultPrevented;
         matchMedia.add('(orientation: landscape)', () => {
