@@ -10,7 +10,12 @@
     flex-direction: column;
 
     height: auto;
-    padding-bottom: calc(462px / 375px * 100vw);
+    //padding-bottom: calc(462px / 375px * 100vw);
+    padding-bottom: calc(80px / 375px * 100vw);
+
+    background-color: #f2f2f2;
+
+    overflow: hidden;
   }
 
   &__wrapper {
@@ -124,6 +129,27 @@
 
     @include portrait {
       display: none;
+    }
+  }
+
+  &__image {
+    display: none;
+
+    @include portrait {
+      display: block;
+
+      position: absolute;
+      //left: calc(119px / 375px * 100vw);
+      //bottom: calc(-64px / 375px * 100vw);
+      left: calc(95px / 375px * 100vw);
+      top: calc(87px / 375px * 100vw);
+
+      width: calc(490px / 375px * 100vw);
+      height: calc(756px / 375px * 100vw);
+
+      mix-blend-mode: multiply;
+
+      //mix-blend-mode: multiply;
     }
   }
   /*
