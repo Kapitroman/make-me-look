@@ -43,7 +43,23 @@ mixin al-assistant()
       .al-assistant__viewer-controls-container
         p.al-assistant__viewer-title-landscape Примеряй свои образы одним касанием
         .al-assistant__viewer-radio-container
+          label(tabindex=0)
+            input(type="radio", tabindex="-1", name="choose-look", id="choose-1", value="1", data-radio-index="0").visually-hidden
+            span
+          label(tabindex=0)
+            input(type="radio", tabindex="-1", name="choose-look", id="choose-0", value="0", data-radio-index="1").visually-hidden
+            span
+          label(tabindex=0)
+            input(type="radio", tabindex="-1", name="choose-look", id="choose-2", value="2", data-radio-index="2").visually-hidden
+            span
+          label(tabindex=0)
+            input(type="radio", tabindex="-1", name="choose-look", id="choose-3", value="3", data-radio-index="3").visually-hidden
+            span
         .al-assistant__viewer-links-container
+          img(src="./img/svg/link.svg", width="285", height="38", alt="линия связи", loading="lazy")
+          img(src="./img/svg/link.svg", width="285", height="38", alt="линия связи", loading="lazy").is-active
+          img(src="./img/svg/link.svg", width="285", height="38", alt="линия связи", loading="lazy")
+          img(src="./img/svg/link.svg", width="285", height="38", alt="линия связи", loading="lazy")
         .al-assistant__viewer-buttons-container
           a(href="#" data-index=0).al-assistant__viewer-button.al-assistant__viewer-button--02
             +picture("content/al-assistant", "clothes-02", "png", 140, 140, "фото предмета одежды", true)
