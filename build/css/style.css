@@ -3705,6 +3705,101 @@ a[href].focus-visible:focus {
   position: relative;
   height: 100%;
   padding-top: 3.9375rem;
+  /*
+  &__model-1 {
+    height: size(607px);
+    aspect-ratio: 358 / 607;
+
+    left: 5.2%;
+    transform: translateX(-20%);
+
+    @include portrait {
+      width: calc(186px/ 680px * 100dvh);
+      height: auto;
+    }
+  }
+
+  &__model-2 {
+    height: size(647px);
+    aspect-ratio: 429 / 647;
+
+    left: 22%;
+    transform: translateX(-50%);
+
+    @include portrait {
+      width: calc(223px/ 680px * 100dvh);
+      height: auto;
+    }
+  }
+
+  &__model-3 {
+    height: size(670px);
+    aspect-ratio: 646 / 670;
+
+    left: 35%;
+    transform: translateX(-50%);
+
+    @include portrait {
+      width: calc(336px/ 680px * 100dvh);
+      height: auto;
+      left: 37%;
+    }
+  }
+
+  &__model-4 {
+    height: size(806px);
+    aspect-ratio: 877 / 806;
+
+    left: 50%;
+    transform: translateX(-50%);
+
+    @include portrait {
+      width: calc(456px/ 680px * 100dvh);
+      height: auto;
+      left: 51.5%;
+    }
+  }
+
+
+  &__model-5 {
+    height: size(642px);
+    aspect-ratio: 418 / 642;
+
+    left: 64%;
+    transform: translateX(-50%);
+
+    @include portrait {
+      width: calc(215px/ 680px * 100dvh);
+      height: auto;
+    }
+  }
+
+  &__model-6 {
+    height: size(637px);
+    aspect-ratio: 589 / 637;
+
+    left: 76%;
+    transform: translateX(-50%);
+
+    @include portrait {
+      width: calc(306px/ 680px * 100dvh);
+      height: auto;
+    }
+  }
+
+  &__model-7 {
+    height: size(627px);
+    aspect-ratio: 278 / 627;
+
+    left: 95%;
+    transform: translateX(-100%);
+
+    @include portrait {
+      width: calc(144px/ 680px * 100dvh);
+      height: auto;
+    }
+  }
+  */
 }
 @media (orientation: portrait) {
   .hero {
@@ -3799,12 +3894,13 @@ a[href].focus-visible:focus {
 .hero__model-1 {
   height: 37.9375rem;
   aspect-ratio: 358/607;
-  left: 5.2%;
-  -webkit-transform: translateX(-20%);
-          transform: translateX(-20%);
+  left: 0;
 }
 @media (orientation: portrait) {
   .hero__model-1 {
+    left: 5.2%;
+    -webkit-transform: translateX(-20%);
+            transform: translateX(-20%);
     width: 27.3529411765dvh;
     height: auto;
   }
@@ -3812,12 +3908,15 @@ a[href].focus-visible:focus {
 .hero__model-2 {
   height: 40.4375rem;
   aspect-ratio: 429/647;
-  left: 22%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+  left: 18%;
 }
 @media (orientation: portrait) {
   .hero__model-2 {
+    left: 22%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
     width: 32.7941176471dvh;
     height: auto;
   }
@@ -3825,40 +3924,47 @@ a[href].focus-visible:focus {
 .hero__model-3 {
   height: 41.875rem;
   aspect-ratio: 646/670;
-  left: 35%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+  left: 30%;
 }
 @media (orientation: portrait) {
   .hero__model-3 {
+    left: 37%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
     width: 49.4117647059dvh;
     height: auto;
-    left: 37%;
   }
 }
 .hero__model-4 {
   height: 50.375rem;
   aspect-ratio: 877/806;
-  left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+  left: 45.5%;
 }
 @media (orientation: portrait) {
   .hero__model-4 {
+    left: 51.5%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
     width: 67.0588235294dvh;
     height: auto;
-    left: 51.5%;
   }
 }
 .hero__model-5 {
   height: 40.125rem;
   aspect-ratio: 418/642;
-  left: 64%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+  left: 58.5%;
 }
 @media (orientation: portrait) {
   .hero__model-5 {
+    left: 64%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
     width: 31.6176470588dvh;
     height: auto;
   }
@@ -3866,12 +3972,15 @@ a[href].focus-visible:focus {
 .hero__model-6 {
   height: 39.8125rem;
   aspect-ratio: 589/637;
-  left: 76%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+  left: 70%;
 }
 @media (orientation: portrait) {
   .hero__model-6 {
+    left: 76%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
     width: 45dvh;
     height: auto;
   }
@@ -3879,15 +3988,62 @@ a[href].focus-visible:focus {
 .hero__model-7 {
   height: 39.1875rem;
   aspect-ratio: 278/627;
-  left: 95%;
   -webkit-transform: translateX(-100%);
           transform: translateX(-100%);
+  left: 86%;
 }
 @media (orientation: portrait) {
   .hero__model-7 {
+    left: 95%;
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
     width: 21.1764705882dvh;
     height: auto;
   }
+}
+.hero__button-next {
+  position: absolute;
+  top: 50%;
+  right: calc(5.21% + 17px);
+  z-index: 5;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 9.1875rem;
+  height: 5.9375rem;
+  border-radius: 2.875rem;
+  padding: 0.625rem;
+  background-color: #d3d3d3;
+}
+@media (orientation: portrait) {
+  .hero__button-next {
+    display: none;
+  }
+}
+.hero__button-next-circle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 4.5rem;
+  height: 4.5rem;
+  border-radius: 50%;
+  margin-left: auto;
+  background-color: #000000;
+}
+.hero__button-next-circle svg {
+  width: 0.75rem;
+  height: 1.5rem;
 }
 .hero__button {
   display: none;
@@ -5533,7 +5689,7 @@ a[href].focus-visible:focus {
 @media (orientation: portrait) {
   .al-assistant__features-item {
     gap: 3.2vw;
-    width: 87.2vw;
+    width: 100%;
   }
 }
 .al-assistant__features-item:nth-child(even) {
@@ -5542,6 +5698,7 @@ a[href].focus-visible:focus {
 @media (orientation: portrait) {
   .al-assistant__features-item:nth-child(even) {
     margin-left: 8.5333333333vw;
+    width: calc(100% - 8.5333333333vw);
   }
 }
 .al-assistant__features-item-icons {

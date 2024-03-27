@@ -11,6 +11,8 @@ import {Burger} from './modules/burger';
 import {scrollSections} from './modules/scroll-sections';
 import {initClothesModelsSlider} from './modules/init-clothes-models-slider';
 import {chooseLook} from './modules/choose-look';
+import {moveNextsection} from './modules/move-next-section';
+
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -45,6 +47,7 @@ window.addEventListener('DOMContentLoaded', () => {
     scrollSections();
     initClothesModelsSlider();
     chooseLook();
+    moveNextsection();
   });
 });
 

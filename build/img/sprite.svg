@@ -2,7 +2,9 @@
 <clipPath id="clip0_1_624">
 <rect width="40" height="40" fill="white" transform="translate(0 0.71875)"/>
 </clipPath>
-</defs><symbol id="circle-1" viewBox="0 0 427 427"><g fill="none">
+</defs><symbol id="arrow-next" viewBox="0 0 15 27"><g fill="none">
+<path d="M1.46729 1.71875L13.4673 13.7188L1.46729 25.7188" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</g></symbol><symbol id="circle-1" viewBox="0 0 427 427"><g fill="none">
 <circle cx="213.768" cy="213.385" r="212.381" stroke="black" stroke-dasharray="2 10"/>
 </g></symbol><symbol id="circle-2" viewBox="0 0 714 714"><g fill="none">
 <circle opacity="0.3" cx="356.706" cy="357.323" r="356.115" stroke="black" stroke-dasharray="2 10"/>

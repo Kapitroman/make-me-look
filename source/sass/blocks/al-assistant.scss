@@ -94,7 +94,7 @@
     @include portrait {
       gap: calc(12px / 375px * 100vw);
 
-      width: calc(327px / 375px * 100vw);
+      width: 100%;
     }
   }
 
@@ -103,6 +103,7 @@
 
     @include portrait {
       margin-left: calc(32px / 375px * 100vw);
+      width: calc(100% - calc(32px / 375px * 100vw));
     }
   }
 
