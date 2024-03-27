@@ -17,8 +17,6 @@
     margin-top: auto;
     margin-bottom: auto;
 
-    background-color: rgba(coral, 0.3);
-
     @include portrait {
       display: flex;
       flex-direction: column;
@@ -210,8 +208,6 @@
     width: 50%;
 
     overflow-y: hidden;
-
-    background-color: rgba(yellowgreen, 0.3);
 
     @include portrait {
       position: relative;

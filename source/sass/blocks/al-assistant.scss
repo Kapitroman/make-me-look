@@ -14,8 +14,6 @@
     width: 31%;
     margin-top: size(50px);
 
-    background-color:rgba(cyan, 0.3);
-
     @include portrait {
       width: 100%;
       margin-top: 0;
@@ -154,8 +152,6 @@
     width: 69%;
     margin-top: size(81px);
 
-    background-color: rgba(tomato, 0.3);
-
     @include portrait {
       position: relative;
 
@@ -191,8 +187,6 @@
     height: size(841px);
     margin-right: 3%;
 
-    background-color: rgba(darkgoldenrod, 0.3);
-
     @include portrait {
       aspect-ratio: 375 / 417;
       height: calc(417px / 375px * 100vw);
@@ -214,8 +208,6 @@
 
     width: size(476px);
     height: size(469px);
-
-    background-color: rgba(yellowgreen, 0.3);
 
     @include portrait {
       top: calc(33px / 375px * 100vw);
@@ -287,8 +279,6 @@
     height: size(604px);
     margin-top: size(37px);
 
-    background-color: rgba(deeppink, 0.3);
-
     @include portrait {
       position: absolute;
       top: calc(85px / 375px * 100vw);
@@ -322,16 +312,12 @@
     aspect-ratio: 307 / 561;
     height: size(561px);
 
-    background-color: rgba(cyan, 0.3);
-
     @include portrait {
       top: 0;
       left: 0;
 
       width: 100%;
       height: 100%;
-
-      background-color: rgba(blue, 0.3);
     }
   }
 
@@ -425,8 +411,6 @@
     width: size(42px);
     height: auto;
 
-    background-color: rgba(darkseagreen, 0.3);
-
     @include portrait {
       display: none;
     }
@@ -496,8 +480,6 @@
     display: flex;
     flex-direction: column;
     gap: size(80px);
-
-    background-color: rgba(green, 0.3);
 
     @include portrait {
       display: none;

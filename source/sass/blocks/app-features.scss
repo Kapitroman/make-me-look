@@ -15,7 +15,6 @@
   }
 
   &__first-step-wrapper {
-    background-color: rgba(brown, 0.5);
     position: relative;
     z-index: 4;
 
@@ -324,7 +323,6 @@
 
   &__second-step {
     position: relative;
-    background-color: rgba(chartreuse, 0.5);
 
     transform: translateX(-36%);
 
@@ -373,8 +371,6 @@
     //width: size(850px);
     height: size(850px);
     aspect-ratio: 1 / 1;
-
-    background-color: rgba($color: #000000, $alpha: 0.1);
 
     @include portrait {
       position: relative;
@@ -569,7 +565,6 @@
   }
 
   &__third-step {
-    background-color: rgba(blue, 0.5);
     margin-top: auto;
 
     transform: translateX(-53%);

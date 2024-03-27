@@ -1,5 +1,4 @@
 .who-for {
-  background-color: rgba(orange, 0.3);
 
   display: flex;
 
@@ -14,8 +13,6 @@
   }
 
   &__view {
-    background-color: rgba(yellow, 0.3);
-
     display: flex;
 
     width: 54%;
@@ -36,8 +33,6 @@
     height: size(850px);
 
     aspect-ratio: 590 / 850;
-
-    background-color: rgba(green, 0.3);
 
     @include portrait {
       aspect-ratio: 374 / 559;
@@ -122,8 +117,6 @@
     left: 0;
     z-index: 3;
 
-    background-color: rgba(darksalmon, 0.3);
-
     @include portrait {
       top: 0;
       left: calc(17px / 375px * 100vw);
@@ -144,7 +137,6 @@
   }
 
   &__features {
-    background-color: rgba(teal, 0.3);
 
     //display: flex;
     //flex-direction: column;
@@ -228,7 +220,6 @@
 
     //transform: translate(size(-52px), size(90px));
 
-    background-color: rgba(violet, 0.3);
 
     @include portrait {
       aspect-ratio: 375 / 485;
