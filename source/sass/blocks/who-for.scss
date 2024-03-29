@@ -29,14 +29,12 @@
 
   &__view-screens-container {
     position: relative;
-    // width: 590px;
-    height: size(850px);
 
+    height: size(850px);
     aspect-ratio: 590 / 850;
 
     @include portrait {
       aspect-ratio: 374 / 559;
-
       height: calc(559px / 375px * 100vw);
     }
 
@@ -60,23 +58,17 @@
   &__view-screen-landscape {
     position: absolute;
     z-index: 2;
-    // bottom: size(-2px);
     bottom: 0;
     left: size(25px);
 
     height: size(828px);
     border-radius: size(77px) size(77px) 0 0;
-
     aspect-ratio: 537 / 828;
 
     overflow: hidden;
 
     @include portrait {
       display: none;
-      //left: calc(-8px / 375px * 100vw);
-
-      //height: calc(418px / 375px * 100vw);
-      //aspect-ratio: 367 / 418;
     }
   }
 
@@ -88,7 +80,6 @@
       position: absolute;
 
       bottom: 0;
-      //left: calc(-8px / 375px * 100vw);
       right: calc(7px / 375px * 100vw);
 
       height: calc(418px / 375px * 100vw);
@@ -124,9 +115,8 @@
       display: flex;
       gap: calc(10px / 375px * 100vw);
 
-
       width: calc(100% - 17px / 375px * 100vw);
-      //white-space: nowrap;
+
       overflow-x: auto;
       scrollbar-width: none;
 
@@ -137,9 +127,6 @@
   }
 
   &__features {
-
-    //display: flex;
-    //flex-direction: column;
     margin-top: auto;
     margin-right: auto;
     margin-bottom: size(55px);
@@ -211,15 +198,9 @@
 
   &__features-container {
     position: relative;
-    //position: absolute;
-    //top: size(90px);
-    //left: size(-52px);
 
     aspect-ratio: 713 / 713;
     height: size(713px);
-
-    //transform: translate(size(-52px), size(90px));
-
 
     @include portrait {
       aspect-ratio: 375 / 485;
@@ -263,7 +244,6 @@
     @include portrait {
       top: calc(60px / 375px * 100vw);
       left: calc(-140px / 375px * 100vw);
-
 
       width: calc(302px / 375px * 100vw);
       height: calc(302px / 375px * 100vw);

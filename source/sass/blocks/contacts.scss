@@ -10,7 +10,6 @@
     flex-direction: column;
 
     height: auto;
-    //padding-bottom: calc(462px / 375px * 100vw);
     padding-bottom: calc(80px / 375px * 100vw);
 
     background-color: #f2f2f2;
@@ -139,8 +138,6 @@
       display: block;
 
       position: absolute;
-      //left: calc(119px / 375px * 100vw);
-      //bottom: calc(-64px / 375px * 100vw);
       left: calc(95px / 375px * 100vw);
       top: calc(87px / 375px * 100vw);
 
@@ -148,32 +145,6 @@
       height: calc(756px / 375px * 100vw);
 
       mix-blend-mode: multiply;
-
-      //mix-blend-mode: multiply;
     }
   }
-  /*
-  &__image {
-    position: absolute;
-    //left: size(723px);
-    //right: size(1119px);
-    right: 35%;
-    bottom: 0;
-
-    width: size(604px);
-    height: size(932px);
-    //width: 32%;
-    //height: 48%;
-    //aspect-ratio: 604 / 932;
-
-    img {
-      width: 100%;
-      height: 100%;
-
-      mix-blend-mode: multiply;
-
-      object-fit: cover;
-    }
-  }
-  */
 }

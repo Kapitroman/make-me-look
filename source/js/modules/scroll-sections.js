@@ -2,8 +2,6 @@ import {matchMedia} from './matchMedia';
 
 gsap.registerPlugin(ScrollTrigger);
 
-//const matchMedia = gsap.matchMedia();
-
 const scrollSections = () => {
   let container = document.querySelector('.wrapper');
 
@@ -84,7 +82,7 @@ const scrollSections = () => {
   }
 
   init();
-  //ScrollTrigger.addEventListener("refreshInit", init);
+  // ScrollTrigger.addEventListener("refreshInit", init);
 };
 
 export {scrollSections};

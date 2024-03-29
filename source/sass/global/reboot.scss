@@ -8,14 +8,13 @@ html,
 body {
   margin: 0;
   padding: 0;
-  min-height: 100dvh; //7777
+  min-height: 100dvh;
 }
 
 html {
   font-style: normal;
   font-weight: 400;
-  //font-size: $fz-default;
-  //line-height: 24px;
+
   font-size: size-desktop-dvh($fz-default);
   line-height: size(24px);
   font-family: $ff-g-text-regular;
@@ -28,60 +27,26 @@ html {
   // если по прежнему есть проблемы с выравниванием
   // https://transfonter.org/ - включите настройку https://prnt.sc/12rnt6g и переконвертируйте шрифт
 
-  height: 100%; //
-  //overflow-x: hidden; //
-	margin: 0; //
-  /*
-  @include portrait {
-    overflow-x: initial;
-  }
-  */
-  //--index-1: calc(100vw / 1920);
-  //--index-2: calc(100dvh / 1080);
-  //--index-3: calc((100vw + 100dvh) / 3000);
+  height: 100%;
+  margin: 0;
 
-  /*
-  @include vp-1919 {
-    font-size: size-desktop($fz-default);
-    line-height: size(24px);
-  }
-  */
-
-  /*
-  @include vp-1919 {
-    font-size: size-desktop-dvh($fz-default);
-    line-height: size(24px);
-  }
-  */
-  /*
-  @include vp-1919-p {
-    font-size: size-desktop-vw($fz-default);
-    line-height: size(24px);
-  }
-  */
   @include portrait {
     font-size: size-desktop-vw-767($fz-default);
     line-height: size(24px);
   }
-  /*
-  @include portrait-l {
-    font-size: size-desktop-dvh($fz-default);
-    line-height: size(24px);
-  }
-  */
 }
 
 body {
-  overflow-y: visible; //
-	position: relative; //
-	overflow-x: hidden; //
+  overflow-y: visible;
+  position: relative;
+  overflow-x: hidden;
 
-	margin: 0; //
+  margin: 0;
   width: 100%;
   height: 100%;
 
   background-color: $color-gray-1;
-  height: unset; //
+  height: unset;
 }
 
 a {

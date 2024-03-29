@@ -1243,35 +1243,6 @@ html {
   text-rendering: optimizeLegibility;
   height: 100%;
   margin: 0;
-  /*
-  @include portrait {
-    overflow-x: initial;
-  }
-  */
-  /*
-  @include vp-1919 {
-    font-size: size-desktop($fz-default);
-    line-height: size(24px);
-  }
-  */
-  /*
-  @include vp-1919 {
-    font-size: size-desktop-dvh($fz-default);
-    line-height: size(24px);
-  }
-  */
-  /*
-  @include vp-1919-p {
-    font-size: size-desktop-vw($fz-default);
-    line-height: size(24px);
-  }
-  */
-  /*
-  @include portrait-l {
-    font-size: size-desktop-dvh($fz-default);
-    line-height: size(24px);
-  }
-  */
 }
 @media (orientation: portrait) {
   html {
@@ -1401,37 +1372,6 @@ a[href].focus-visible:focus {
   opacity: 0.7;
 }
 
-/*
-.wrapper {
-  position: relative;
-
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  // stylelint-disable-next-line
-  min-height: calc(100 * var(--vh, 1vh));
-
-  .header,
-  .footer {
-    flex-shrink: 0;
-  }
-
-  main {
-    flex-grow: 1;
-  }
-}
-*/
-/*
-.rouble {
-  // stylelint-disable
-  font-weight: 400 !important;
-  // stylelint-enable
-  font-family: $ff-rouble;
-  // stylelint-disable
-  text-transform: lowercase !important;
-  // stylelint-enable
-}
-*/
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -1759,15 +1699,6 @@ a[href].focus-visible:focus {
 @media (orientation: portrait) {
   .footer__image {
     display: none;
-    /*
-    left: calc(119px / 375px * 100vw);
-    bottom: calc(-64px / 375px * 100vw);
-
-    width: calc(490px / 375px * 100vw);
-    height: calc(756px / 375px * 100vw);
-
-    transform: none;
-    */
   }
 }
 .footer__image img {
@@ -2671,101 +2602,6 @@ a[href].focus-visible:focus {
   position: relative;
   height: 100%;
   padding-top: 3.9375rem;
-  /*
-  &__model-1 {
-    height: size(607px);
-    aspect-ratio: 358 / 607;
-
-    left: 5.2%;
-    transform: translateX(-20%);
-
-    @include portrait {
-      width: calc(186px/ 680px * 100dvh);
-      height: auto;
-    }
-  }
-
-  &__model-2 {
-    height: size(647px);
-    aspect-ratio: 429 / 647;
-
-    left: 22%;
-    transform: translateX(-50%);
-
-    @include portrait {
-      width: calc(223px/ 680px * 100dvh);
-      height: auto;
-    }
-  }
-
-  &__model-3 {
-    height: size(670px);
-    aspect-ratio: 646 / 670;
-
-    left: 35%;
-    transform: translateX(-50%);
-
-    @include portrait {
-      width: calc(336px/ 680px * 100dvh);
-      height: auto;
-      left: 37%;
-    }
-  }
-
-  &__model-4 {
-    height: size(806px);
-    aspect-ratio: 877 / 806;
-
-    left: 50%;
-    transform: translateX(-50%);
-
-    @include portrait {
-      width: calc(456px/ 680px * 100dvh);
-      height: auto;
-      left: 51.5%;
-    }
-  }
-
-
-  &__model-5 {
-    height: size(642px);
-    aspect-ratio: 418 / 642;
-
-    left: 64%;
-    transform: translateX(-50%);
-
-    @include portrait {
-      width: calc(215px/ 680px * 100dvh);
-      height: auto;
-    }
-  }
-
-  &__model-6 {
-    height: size(637px);
-    aspect-ratio: 589 / 637;
-
-    left: 76%;
-    transform: translateX(-50%);
-
-    @include portrait {
-      width: calc(306px/ 680px * 100dvh);
-      height: auto;
-    }
-  }
-
-  &__model-7 {
-    height: size(627px);
-    aspect-ratio: 278 / 627;
-
-    left: 95%;
-    transform: translateX(-100%);
-
-    @include portrait {
-      width: calc(144px/ 680px * 100dvh);
-      height: auto;
-    }
-  }
-  */
 }
 @media (orientation: portrait) {
   .hero {
@@ -5042,30 +4878,6 @@ a[href].focus-visible:focus {
   display: -ms-flexbox;
   display: flex;
   height: 100%;
-  /*
-  &__image {
-    position: absolute;
-    //left: size(723px);
-    //right: size(1119px);
-    right: 35%;
-    bottom: 0;
-
-    width: size(604px);
-    height: size(932px);
-    //width: 32%;
-    //height: 48%;
-    //aspect-ratio: 604 / 932;
-
-    img {
-      width: 100%;
-      height: 100%;
-
-      mix-blend-mode: multiply;
-
-      object-fit: cover;
-    }
-  }
-  */
 }
 @media (orientation: portrait) {
   .contacts {

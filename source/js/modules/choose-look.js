@@ -5,7 +5,6 @@ const chooseLook = () => {
     return;
   }
 
-
   const pictures = viewer.querySelectorAll('.al-assistant__model');
   const controllButtons = viewer.querySelector('.al-assistant__viewer-buttons-container');
   const controllRadios = viewer.querySelector('.al-assistant__viewer-radio-container');
